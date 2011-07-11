@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <HTML>
 <HEAD>
-	<META charset=UTF-8><TITLE>A3lyphe/Parallax[Modular]</TITLE>
+	<META charset=UTF-8><TITLE>A3lyphe/Parallax[Modular]5</TITLE>
 	<META><LINK rel="shortcut icon" type="image/x-icon" href="Last Reset Favicon.ico">
 	<META><LINK rel="stylesheet" type="text/css" media="screen" href="STYLE.CSS">
 	<META><SCRIPT type="text/javascript" src="HausRennen.js"></SCRIPT>
@@ -51,247 +51,245 @@
 		<INPUT  type="text" id="Zeit" value="" style="border:transparent;font-size:56px;background-Color:transparent;position:absolute;left:527px;width:90px;height:90px;top:0px;z-index:110">
 	</DIV>
 
-	<DIV id="Ischtuk">Ischtuk
-	<DIV id="IschtukHafenBild"></DIV>
+	<DIV id="D">D
+	<DIV id="DHafenBild"></DIV>
 	<DIV id="Symbole2"></DIV>
-	<INPUT  type="text" id="IschtukLeute" value="">
-	<INPUT  type="text" id="IschtukGeld" value="">
-	<INPUT  type="text" id="IschtukNahrung" value="">
-	<DIV id="IschtukTaverneKnopf" onmousedown="IschtukTaverne(),IschtukKontorExit(),IschtukHafenExit(),IschtukGovernourExit()"></DIV>
-	<DIV id="IschtukKontorKnopf" onmousedown="IschtukKontor(),IschtukHafenExit(),IschtukTaverneExit(),IschtukGovernourExit()"></DIV>
-	<DIV id="IschtukHafenKnopf" onmousedown="IschtukHafen(),IschtukKontorExit(),IschtukTaverneExit(),IschtukGovernourExit()"></DIV>
-	<DIV id="IschtukGovernourKnopf" onmousedown="IschtukGovernour(),IschtukKontorExit(),IschtukHafenExit(),IschtukTaverneExit()"></DIV>
-	<DIV id="IschtukExit" onmousedown="IschtukExit()"></DIV>
+	<INPUT  type="text" id="DLeute" value="">
+	<INPUT  type="text" id="DGeld" value="">
+	<INPUT  type="text" id="DNahrung" value="">
+	<DIV id="DTaverneKnopf" onmousedown="DTaverne(),DKontorExit(),DHafenExit(),DGovernourExit()"></DIV>
+	<DIV id="DKontorKnopf" onmousedown="DKontor(),DHafenExit(),DTaverneExit(),DGovernourExit()"></DIV>
+	<DIV id="DHafenKnopf" onmousedown="DHafen(),DKontorExit(),DTaverneExit(),DGovernourExit()"></DIV>
+	<DIV id="DGovernourKnopf" onmousedown="DGovernour(),DKontorExit(),DHafenExit(),DTaverneExit()"></DIV>
+	<DIV id="DExit" onmousedown="DExit()"></DIV>
 	<IMG alt src="images/HafenBild.png" style="position:absolute;right:50px;z-index:12;top:10px;width:260px;height:100px;">
 
-<DIV id="IschtukTaverne">
+<DIV id="DTaverne">
 	
 
-	<DIV id="IschtukTaverneFenster"></DIV>
-	<DIV id="IschtukTaverneFenster2"></DIV>
-	<DIV id="IschtukTaverneTheke"></DIV>
-	<DIV id="IschtukTaverneBarceeper" onmousedown="IschtukTaverneBarceeper()"></DIV>
-	<DIV id="IschtukTaverneSchatzkarte" onmousedown="IschtukTaverneSchatzkarte()"></DIV>
-	<DIV id="IschtukTavernePersonal" onmousedown="IschtukTavernePersonal()"></DIV>
-	<DIV id="IschtukTaverneLeute" onmousedown="IschtukAnheuern()"></DIV>
-	<DIV id="IschtukTaverneHund" onmousedown="IschtukTaverneHund()"></DIV>
-	<DIV id="IschtukTaverneBilderRahmenSchiff" onmousedown="IschtukTaverneBilderRahmenSchiff()"></DIV>
-	<DIV id="IschtukTaverneBilderRahmenSchiff2" onmousedown="IschtukTaverneBilderRahmenSchiff2()"></DIV>
-	<DIV id="IschtukTaverneExit" onmousedown="IschtukTaverneExit()"></DIV>
+	<DIV id="DTaverneFenster"></DIV>
+	<DIV id="DTaverneFenster2"></DIV>
+	<DIV id="DTaverneTheke"></DIV>
+	<DIV id="DTaverneBarceeper" onmousedown="DTaverneBarceeper()"></DIV>
+	<DIV id="DTaverneSchatzkarte" onmousedown="DTaverneSchatzkarte()"></DIV>
+	<DIV id="DTavernePersonal" onmousedown="DTavernePersonal()"></DIV>
+	<DIV id="DTaverneLeute" onmousedown="DAnheuern()"></DIV>
+	<DIV id="DTaverneHund" onmousedown="DTaverneHund()"></DIV>
+	<DIV id="DTaverneBilderRahmenSchiff" onmousedown="DTaverneBilderRahmenSchiff()"></DIV>
+	<DIV id="DTaverneBilderRahmenSchiff2" onmousedown="DTaverneBilderRahmenSchiff2()"></DIV>
+	<DIV id="DTaverneExit" onmousedown="DTaverneExit()"></DIV>
 </DIV>
-<DIV id="IschtukKontor">
+<DIV id="DKontor">
 
 	<IMG alt src="images/Truhe.png" style="position:absolute;right:150px;z-index:12;top:353px;width:80px;height:50px;">
 	<IMG alt src="images/Ladung.png" style="position:absolute;right:150px;z-index:12;top:387px;width:80px;height:50px;">
 	
-	<DIV id="IschtukKontorExitKnopf" onmousedown="IschtukKontorExit()"></DIV>
-	<DIV id="Ischtukkontorbild" class="Ischtuk">
+	<DIV id="DKontorExitKnopf" onmousedown="DKontorExit()"></DIV>
+	<DIV id="Dkontorbild" class="D">
 	
-	<BUTTON class="kaufen1" style="top:40px;" id="IschtukKaffeeKaufen1" onmouseup="kaufen('player','IschtukPreise','Kaffee',1,1.002)">
+	<BUTTON class="kaufen1" style="top:40px;" id="DKaffeeKaufen1" onmouseup="kaufen('player','DPreise','Kaffee',1,1.002)">
 	</BUTTON>
-	<BUTTON class="kaufen1" style="top:60px;" id="IschtukTabakKaufen1" onmouseup="kaufen('player','IschtukPreise','Tabak',1,1.002)">
+	<BUTTON class="kaufen1" style="top:60px;" id="DTabakKaufen1" onmouseup="kaufen('player','DPreise','Tabak',1,1.002)">
 	</BUTTON>
-	<BUTTON class="kaufen1" style="top:80px;" id="IschtukZuckerrohrKaufen1" onmouseup="kaufen('player','IschtukPreise','Zuckerrohr',1,1.002)">
+	<BUTTON class="kaufen1" style="top:80px;" id="DZuckerrohrKaufen1" onmouseup="kaufen('player','DPreise','Zuckerrohr',1,1.002)">
 	</BUTTON>
-	<BUTTON class="kaufen1" style="top:100px;" id="IschtukRumKaufen1" onmouseup="kaufen('player','IschtukPreise','Rum',1,1.002)">
+	<BUTTON class="kaufen1" style="top:100px;" id="DRumKaufen1" onmouseup="kaufen('player','DPreise','Rum',1,1.002)">
 	</BUTTON>
-	<BUTTON class="kaufen1" style="top:120px;" id="IschtukBaumwolleKaufen1" onmouseup="kaufen('player','IschtukPreise','Baumwolle',1,1.002)">
+	<BUTTON class="kaufen1" style="top:120px;" id="DBaumwolleKaufen1" onmouseup="kaufen('player','DPreise','Baumwolle',1,1.002)">
 	</BUTTON>
-	<BUTTON class="kaufen1" style="top:140px;" id="IschtukPerlenKaufen1" onmouseup="kaufen('player','IschtukPreise','Perlen',1,1.002)">
+	<BUTTON class="kaufen1" style="top:140px;" id="DPerlenKaufen1" onmouseup="kaufen('player','DPreise','Perlen',1,1.002)">
 	</BUTTON>
-	<BUTTON class="kaufen1" style="top:160px;" id="IschtukSegeltuchKaufen1" onmouseup="kaufen('player','IschtukPreise','Segeltuch',1,1.002)">
+	<BUTTON class="kaufen1" style="top:160px;" id="DSegeltuchKaufen1" onmouseup="kaufen('player','DPreise','Segeltuch',1,1.002)">
 	</BUTTON>
-	<BUTTON class="kaufen1" style="top:180px;" id="IschtukHanfKaufen1" onmouseup="kaufen('player','IschtukPreise','Hanf',1,1.002)">
+	<BUTTON class="kaufen1" style="top:180px;" id="DHanfKaufen1" onmouseup="kaufen('player','DPreise','Hanf',1,1.002)">
 	</BUTTON>
-	<BUTTON class="kaufen1" style="top:200px;" id="IschtukTeerKaufen1" onmouseup="kaufen('player','IschtukPreise','Teer',1,1.002)">
+	<BUTTON class="kaufen1" style="top:200px;" id="DTeerKaufen1" onmouseup="kaufen('player','DPreise','Teer',1,1.002)">
 	</BUTTON>
-	<BUTTON class="kaufen1" style="top:220px;" id="IschtukHolzKaufen1" onmouseup="kaufen('player','IschtukPreise','Holz',1,1.002)">
+	<BUTTON class="kaufen1" style="top:220px;" id="DHolzKaufen1" onmouseup="kaufen('player','DPreise','Holz',1,1.002)">
 	</BUTTON>
-	<BUTTON class="kaufen1" style="top:240px;" id="IschtukPulverKaufen1" onmouseup="kaufen('player','IschtukPreise','Pulver',1,1.002)">
+	<BUTTON class="kaufen1" style="top:240px;" id="DPulverKaufen1" onmouseup="kaufen('player','DPreise','Pulver',1,1.002)">
 	</BUTTON>
-	<BUTTON class="kaufen1" style="top:260px;" id="IschtukKugelnKaufen1" onmouseup="kaufen('player','IschtukPreise','Kugeln',1,1.002)">
+	<BUTTON class="kaufen1" style="top:260px;" id="DKugelnKaufen1" onmouseup="kaufen('player','DPreise','Kugeln',1,1.002)">
 	</BUTTON>
-	<BUTTON class="kaufen1" style="top:280px;" id="IschtukKanonenKaufen1" onmouseup="kaufen('player','IschtukPreise','Kanonen',1,1.002)">
+	<BUTTON class="kaufen1" style="top:280px;" id="DKanonenKaufen1" onmouseup="kaufen('player','DPreise','Kanonen',1,1.002)">
 	</BUTTON>
-	<BUTTON class="kaufen1" style="top:300px;" id="IschtukNahrungKaufen1" onmouseup="kaufen('player','IschtukPreise','Nahrung',1,1.002)">
+	<BUTTON class="kaufen1" style="top:300px;" id="DNahrungKaufen1" onmouseup="kaufen('player','DPreise','Nahrung',1,1.002)">
 	</BUTTON>
 
-	<BUTTON class="kaufen5" style="top:40px;" id="IschtukKaffeeKaufen5" onmouseup="kaufen('player','IschtukPreise','Kaffee',5,1.01)">
+	<BUTTON class="kaufen5" style="top:40px;" id="DKaffeeKaufen5" onmouseup="kaufen('player','DPreise','Kaffee',5,1.01)">
 	</BUTTON>
-	<BUTTON class="kaufen5" style="top:60px;" id="IschtukTabakKaufen5" onmouseup="kaufen('player','IschtukPreise','Tabak',5,1.01)">
+	<BUTTON class="kaufen5" style="top:60px;" id="DTabakKaufen5" onmouseup="kaufen('player','DPreise','Tabak',5,1.01)">
 	</BUTTON>
-	<BUTTON class="kaufen5" style="top:80px;" id="IschtukZuckerrohrKaufen5" onmouseup="kaufen('player','IschtukPreise','Zuckerrohr',5,1.01)">
+	<BUTTON class="kaufen5" style="top:80px;" id="DZuckerrohrKaufen5" onmouseup="kaufen('player','DPreise','Zuckerrohr',5,1.01)">
 	</BUTTON>
-	<BUTTON class="kaufen5" style="top:100px;" id="IschtukRumKaufen5" onmouseup="kaufen('player','IschtukPreise','Rum',5,1.01)">
+	<BUTTON class="kaufen5" style="top:100px;" id="DRumKaufen5" onmouseup="kaufen('player','DPreise','Rum',5,1.01)">
 	</BUTTON>
-	<BUTTON class="kaufen5" style="top:120px;" id="IschtukBaumwolleKaufen5" onmouseup="kaufen('player','IschtukPreise','Baumwolle',5,1.01)">
+	<BUTTON class="kaufen5" style="top:120px;" id="DBaumwolleKaufen5" onmouseup="kaufen('player','DPreise','Baumwolle',5,1.01)">
 	</BUTTON>
-	<BUTTON class="kaufen5" style="top:140px;" id="IschtukPerlenKaufen5" onmouseup="kaufen('player','IschtukPreise','Perlen',5,1.01)">
+	<BUTTON class="kaufen5" style="top:140px;" id="DPerlenKaufen5" onmouseup="kaufen('player','DPreise','Perlen',5,1.01)">
 	</BUTTON>
-	<BUTTON class="kaufen5" style="top:160px;" id="IschtukSegeltuchKaufen5" onmouseup="kaufen('player','IschtukPreise','Segeltuch',5,1.01)">
+	<BUTTON class="kaufen5" style="top:160px;" id="DSegeltuchKaufen5" onmouseup="kaufen('player','DPreise','Segeltuch',5,1.01)">
 	</BUTTON>
-	<BUTTON class="kaufen5" style="top:180px;" id="IschtukHanfKaufen5" onmouseup="kaufen('player','IschtukPreise','Hanf',5,1.01)">
+	<BUTTON class="kaufen5" style="top:180px;" id="DHanfKaufen5" onmouseup="kaufen('player','DPreise','Hanf',5,1.01)">
 	</BUTTON>
-	<BUTTON class="kaufen5" style="top:200px;" id="IschtukTeerKaufen5" onmouseup="kaufen('player','IschtukPreise','Teer',5,1.01)">
+	<BUTTON class="kaufen5" style="top:200px;" id="DTeerKaufen5" onmouseup="kaufen('player','DPreise','Teer',5,1.01)">
 	</BUTTON>
-	<BUTTON class="kaufen5" style="top:220px;" id="IschtukHolzKaufen5" onmouseup="kaufen('player','IschtukPreise','Holz',5,1.01)">
+	<BUTTON class="kaufen5" style="top:220px;" id="DHolzKaufen5" onmouseup="kaufen('player','DPreise','Holz',5,1.01)">
 	</BUTTON>
-	<BUTTON class="kaufen5" style="top:240px;" id="IschtukPulverKaufen5" onmouseup="kaufen('player','IschtukPreise','Pulver',5,1.01)">
+	<BUTTON class="kaufen5" style="top:240px;" id="DPulverKaufen5" onmouseup="kaufen('player','DPreise','Pulver',5,1.01)">
 	</BUTTON>
-	<BUTTON class="kaufen5" style="top:260px;" id="IschtukKugelnKaufen5" onmouseup="kaufen('player','IschtukPreise','Kugeln',5,1.01)">
+	<BUTTON class="kaufen5" style="top:260px;" id="DKugelnKaufen5" onmouseup="kaufen('player','DPreise','Kugeln',5,1.01)">
 	</BUTTON>
-	<BUTTON class="kaufen5" style="top:280px;" id="IschtukKanonenKaufen5" onmouseup="kaufen('player','IschtukPreise','Kanonen',5,1.01)">
+	<BUTTON class="kaufen5" style="top:280px;" id="DKanonenKaufen5" onmouseup="kaufen('player','DPreise','Kanonen',5,1.01)">
 	</BUTTON>
-	<BUTTON class="kaufen5" style="top:300px;" id="IschtukNahrungKaufen5" onmouseup="kaufen('player','IschtukPreise','Nahrung',5,1.01)">
+	<BUTTON class="kaufen5" style="top:300px;" id="DNahrungKaufen5" onmouseup="kaufen('player','DPreise','Nahrung',5,1.01)">
 	</BUTTON>
 
-	<BUTTON class="kaufen10" style="top:40px;" id="IschtukKaffeeKaufen10" onmouseup="kaufen('player','IschtukPreise','Kaffee',10,1.02)">
+	<BUTTON class="kaufen10" style="top:40px;" id="DKaffeeKaufen10" onmouseup="kaufen('player','DPreise','Kaffee',10,1.02)">
 	</BUTTON>
-	<BUTTON class="kaufen10" style="top:60px;" id="IschtukTabakKaufen10" onmouseup="kaufen('player','IschtukPreise','Tabak',10,1.02)">
+	<BUTTON class="kaufen10" style="top:60px;" id="DTabakKaufen10" onmouseup="kaufen('player','DPreise','Tabak',10,1.02)">
 	</BUTTON>
-	<BUTTON class="kaufen10" style="top:80px;" id="IschtukZuckerrohrKaufen10" onmouseup="kaufen('player','IschtukPreise','Zuckerrohr',10,1.02)">
+	<BUTTON class="kaufen10" style="top:80px;" id="DZuckerrohrKaufen10" onmouseup="kaufen('player','DPreise','Zuckerrohr',10,1.02)">
 	</BUTTON>
-	<BUTTON class="kaufen10" style="top:100px;" id="IschtukRumKaufen10" onmouseup="kaufen('player','IschtukPreise','Rum',10,1.02)">
+	<BUTTON class="kaufen10" style="top:100px;" id="DRumKaufen10" onmouseup="kaufen('player','DPreise','Rum',10,1.02)">
 	</BUTTON>
-	<BUTTON class="kaufen10" style="top:120px;" id="IschtukBaumwolleKaufen10" onmouseup="kaufen('player','IschtukPreise','Baumwolle',10,1.02)">
+	<BUTTON class="kaufen10" style="top:120px;" id="DBaumwolleKaufen10" onmouseup="kaufen('player','DPreise','Baumwolle',10,1.02)">
 	</BUTTON>
-	<BUTTON class="kaufen10" style="top:140px;" id="IschtukPerlenKaufen10" onmouseup="kaufen('player','IschtukPreise','Perlen',10,1.02)">
+	<BUTTON class="kaufen10" style="top:140px;" id="DPerlenKaufen10" onmouseup="kaufen('player','DPreise','Perlen',10,1.02)">
 	</BUTTON>
-	<BUTTON class="kaufen10" style="top:160px;" id="IschtukSegeltuchKaufen10" onmouseup="kaufen('player','IschtukPreise','Segeltuch',10,1.02)">
+	<BUTTON class="kaufen10" style="top:160px;" id="DSegeltuchKaufen10" onmouseup="kaufen('player','DPreise','Segeltuch',10,1.02)">
 	</BUTTON>
-	<BUTTON class="kaufen10" style="top:180px;" id="IschtukHanfKaufen10" onmouseup="kaufen('player','IschtukPreise','Hanf',10,1.02)">
+	<BUTTON class="kaufen10" style="top:180px;" id="DHanfKaufen10" onmouseup="kaufen('player','DPreise','Hanf',10,1.02)">
 	</BUTTON>
-	<BUTTON class="kaufen10" style="top:200px;" id="IschtukTeerKaufen10" onmouseup="kaufen('player','IschtukPreise','Teer',10,1.02)">
+	<BUTTON class="kaufen10" style="top:200px;" id="DTeerKaufen10" onmouseup="kaufen('player','DPreise','Teer',10,1.02)">
 	</BUTTON>
-	<BUTTON class="kaufen10" style="top:220px;" id="IschtukHolzKaufen10" onmouseup="kaufen('player','IschtukPreise','Holz',10,1.02)">
+	<BUTTON class="kaufen10" style="top:220px;" id="DHolzKaufen10" onmouseup="kaufen('player','DPreise','Holz',10,1.02)">
 	</BUTTON>
-	<BUTTON class="kaufen10" style="top:240px;" id="IschtukPulverKaufen10" onmouseup="kaufen('player','IschtukPreise','Pulver',10,1.02)">
+	<BUTTON class="kaufen10" style="top:240px;" id="DPulverKaufen10" onmouseup="kaufen('player','DPreise','Pulver',10,1.02)">
 	</BUTTON>
-	<BUTTON class="kaufen10" style="top:260px;" id="IschtukKugelnKaufen10" onmouseup="kaufen('player','IschtukPreise','Kugeln',10,1.02)">
+	<BUTTON class="kaufen10" style="top:260px;" id="DKugelnKaufen10" onmouseup="kaufen('player','DPreise','Kugeln',10,1.02)">
 	</BUTTON>
-	<BUTTON class="kaufen10" style="top:280px;" id="IschtukKanonenKaufen10" onmouseup="kaufen('player','IschtukPreise','Kanonen',10,1.02)">
+	<BUTTON class="kaufen10" style="top:280px;" id="DKanonenKaufen10" onmouseup="kaufen('player','DPreise','Kanonen',10,1.02)">
 	</BUTTON>
-	<BUTTON class="kaufen10" style="top:300px;" id="IschtukNahrungKaufen10" onmouseup="kaufen('player','IschtukPreise','Nahrung',10,1.02)">
+	<BUTTON class="kaufen10" style="top:300px;" id="DNahrungKaufen10" onmouseup="kaufen('player','DPreise','Nahrung',10,1.02)">
 	</BUTTON>
-	
+
+	<BUTTON class="verkaufen1" style="top:40px;" id="DKaffeeverkaufen1" onmouseup="verkaufen('player','DPreise','Kaffee',1,.998)">
 	</BUTTON>
-	<BUTTON class="verkaufen1" style="top:40px;" id="IschtukKaffeeverkaufen1" onmouseup="verkaufen('player','IschtukPreise','Kaffee',1,.998)">
+	<BUTTON class="verkaufen1" style="top:60px;" id="DTabakverkaufen1" onmouseup="verkaufen('player','DPreise','Tabak',1,.998)">
 	</BUTTON>
-	<BUTTON class="verkaufen1" style="top:60px;" id="IschtukTabakverkaufen1" onmouseup="verkaufen('player','IschtukPreise','Tabak',1,.998)">
+	<BUTTON class="verkaufen1" style="top:80px;" id="DZuckerrohrverkaufen1" onmouseup="verkaufen('player','DPreise','Zuckerrohr',1,.998)">
 	</BUTTON>
-	<BUTTON class="verkaufen1" style="top:80px;" id="IschtukZuckerrohrverkaufen1" onmouseup="verkaufen('player','IschtukPreise','Zuckerrohr',1,.998)">
+	<BUTTON class="verkaufen1" style="top:100px;" id="DRumverkaufen1" onmouseup="verkaufen('player','DPreise','Rum',1,.998)">
 	</BUTTON>
-	<BUTTON class="verkaufen1" style="top:100px;" id="IschtukRumverkaufen1" onmouseup="verkaufen('player','IschtukPreise','Rum',1,.998)">
+	<BUTTON class="verkaufen1" style="top:120px;" id="DBaumwolleverkaufen1" onmouseup="verkaufen('player','DPreise','Baumwolle',1,.998)">
 	</BUTTON>
-	<BUTTON class="verkaufen1" style="top:120px;" id="IschtukBaumwolleverkaufen1" onmouseup="verkaufen('player','IschtukPreise','Baumwolle',1,.998)">
+	<BUTTON class="verkaufen1" style="top:140px;" id="DPerlenverkaufen1" onmouseup="verkaufen('player','DPreise','Perlen',1,.998)">
 	</BUTTON>
-	<BUTTON class="verkaufen1" style="top:140px;" id="IschtukPerlenverkaufen1" onmouseup="verkaufen('player','IschtukPreise','Perlen',1,.998)">
+	<BUTTON class="verkaufen1" style="top:160px;" id="DSegeltuchverkaufen1" onmouseup="verkaufen('player','DPreise','Segeltuch',1,.998)">
 	</BUTTON>
-	<BUTTON class="verkaufen1" style="top:160px;" id="IschtukSegeltuchverkaufen1" onmouseup="verkaufen('player','IschtukPreise','Segeltuch',1,.998)">
+	<BUTTON class="verkaufen1" style="top:180px;" id="DHanfverkaufen1" onmouseup="verkaufen('player','DPreise','Hanf',1,.998)">
 	</BUTTON>
-	<BUTTON class="verkaufen1" style="top:180px;" id="IschtukHanfverkaufen1" onmouseup="verkaufen('player','IschtukPreise','Hanf',1,.998)">
+	<BUTTON class="verkaufen1" style="top:200px;" id="DTeerverkaufen1" onmouseup="verkaufen('player','DPreise','Teer',1,.998)">
 	</BUTTON>
-	<BUTTON class="verkaufen1" style="top:200px;" id="IschtukTeerverkaufen1" onmouseup="verkaufen('player','IschtukPreise','Teer',1,.998)">
+	<BUTTON class="verkaufen1" style="top:220px;" id="DHolzverkaufen1" onmouseup="verkaufen('player','DPreise','Holz',1,.998)">
 	</BUTTON>
-	<BUTTON class="verkaufen1" style="top:220px;" id="IschtukHolzverkaufen1" onmouseup="verkaufen('player','IschtukPreise','Holz',1,.998)">
+	<BUTTON class="verkaufen1" style="top:240px;" id="DPulververkaufen1" onmouseup="verkaufen('player','DPreise','Pulver',1,.998)">
 	</BUTTON>
-	<BUTTON class="verkaufen1" style="top:240px;" id="IschtukPulververkaufen1" onmouseup="verkaufen('player','IschtukPreise','Pulver',1,.998)">
+	<BUTTON class="verkaufen1" style="top:260px;" id="DKugelnverkaufen1" onmouseup="verkaufen('player','DPreise','Kugeln',1,.998)">
 	</BUTTON>
-	<BUTTON class="verkaufen1" style="top:260px;" id="IschtukKugelnverkaufen1" onmouseup="verkaufen('player','IschtukPreise','Kugeln',1,.998)">
+	<BUTTON class="verkaufen1" style="top:280px;" id="DKanonenverkaufen1" onmouseup="verkaufen('player','DPreise','Kanonen',1,.998)">
 	</BUTTON>
-	<BUTTON class="verkaufen1" style="top:280px;" id="IschtukKanonenverkaufen1" onmouseup="verkaufen('player','IschtukPreise','Kanonen',1,.998)">
+	<BUTTON class="verkaufen1" style="top:300px;" id="DNahrungverkaufen1" onmouseup="verkaufen('player','DPreise','Nahrung',1,.998)">
 	</BUTTON>
-	<BUTTON class="verkaufen1" style="top:300px;" id="IschtukNahrungverkaufen1" onmouseup="verkaufen('player','IschtukPreise','Nahrung',1,.998)">
+
+	<BUTTON class="verkaufen5" style="top:40px;" id="DKaffeeverkaufen5" onmouseup="verkaufen('player','DPreise','Kaffee',5,.99)">
 	</BUTTON>
-	
+	<BUTTON class="verkaufen5" style="top:60px;" id="DTabakverkaufen5" onmouseup="verkaufen('player','DPreise','Tabak',5,.99)">
 	</BUTTON>
-	<BUTTON class="verkaufen5" style="top:40px;" id="IschtukKaffeeverkaufen5" onmouseup="verkaufen('player','IschtukPreise','Kaffee',5,.99)">
+	<BUTTON class="verkaufen5" style="top:80px;" id="DZuckerrohrverkaufen5" onmouseup="verkaufen('player','DPreise','Zuckerrohr',5,.99)">
 	</BUTTON>
-	<BUTTON class="verkaufen5" style="top:60px;" id="IschtukTabakverkaufen5" onmouseup="verkaufen('player','IschtukPreise','Tabak',5,.99)">
+	<BUTTON class="verkaufen5" style="top:100px;" id="DRumverkaufen5" onmouseup="verkaufen('player','DPreise','Rum',5,.99)">
 	</BUTTON>
-	<BUTTON class="verkaufen5" style="top:80px;" id="IschtukZuckerrohrverkaufen5" onmouseup="verkaufen('player','IschtukPreise','Zuckerrohr',5,.99)">
+	<BUTTON class="verkaufen5" style="top:120px;" id="DBaumwolleverkaufen5" onmouseup="verkaufen('player','DPreise','Baumwolle',5,.99)">
 	</BUTTON>
-	<BUTTON class="verkaufen5" style="top:100px;" id="IschtukRumverkaufen5" onmouseup="verkaufen('player','IschtukPreise','Rum',5,.99)">
+	<BUTTON class="verkaufen5" style="top:140px;" id="DPerlenverkaufen5" onmouseup="verkaufen('player','DPreise','Perlen',5,.99)">
 	</BUTTON>
-	<BUTTON class="verkaufen5" style="top:120px;" id="IschtukBaumwolleverkaufen5" onmouseup="verkaufen('player','IschtukPreise','Baumwolle',5,.99)">
+	<BUTTON class="verkaufen5" style="top:160px;" id="DSegeltuchverkaufen5" onmouseup="verkaufen('player','DPreise','Segeltuch',5,.99)">
 	</BUTTON>
-	<BUTTON class="verkaufen5" style="top:140px;" id="IschtukPerlenverkaufen5" onmouseup="verkaufen('player','IschtukPreise','Perlen',5,.99)">
+	<BUTTON class="verkaufen5" style="top:180px;" id="DHanfverkaufen5" onmouseup="verkaufen('player','DPreise','Hanf',5,.99)">
 	</BUTTON>
-	<BUTTON class="verkaufen5" style="top:160px;" id="IschtukSegeltuchverkaufen5" onmouseup="verkaufen('player','IschtukPreise','Segeltuch',5,.99)">
+	<BUTTON class="verkaufen5" style="top:200px;" id="DTeerverkaufen5" onmouseup="verkaufen('player','DPreise','Teer',5,.99)">
 	</BUTTON>
-	<BUTTON class="verkaufen5" style="top:180px;" id="IschtukHanfverkaufen5" onmouseup="verkaufen('player','IschtukPreise','Hanf',5,.99)">
+	<BUTTON class="verkaufen5" style="top:220px;" id="DHolzverkaufen5" onmouseup="verkaufen('player','DPreise','Holz',5,.99)">
 	</BUTTON>
-	<BUTTON class="verkaufen5" style="top:200px;" id="IschtukTeerverkaufen5" onmouseup="verkaufen('player','IschtukPreise','Teer',5,.99)">
+	<BUTTON class="verkaufen5" style="top:240px;" id="DPulververkaufen5" onmouseup="verkaufen('player','DPreise','Pulver',5,.99)">
 	</BUTTON>
-	<BUTTON class="verkaufen5" style="top:220px;" id="IschtukHolzverkaufen5" onmouseup="verkaufen('player','IschtukPreise','Holz',5,.99)">
+	<BUTTON class="verkaufen5" style="top:260px;" id="DKugelnverkaufen5" onmouseup="verkaufen('player','DPreise','Kugeln',5,.99)">
 	</BUTTON>
-	<BUTTON class="verkaufen5" style="top:240px;" id="IschtukPulververkaufen5" onmouseup="verkaufen('player','IschtukPreise','Pulver',5,.99)">
+	<BUTTON class="verkaufen5" style="top:280px;" id="DKanonenverkaufen5" onmouseup="verkaufen('player','DPreise','Kanonen',5,.99)">
 	</BUTTON>
-	<BUTTON class="verkaufen5" style="top:260px;" id="IschtukKugelnverkaufen5" onmouseup="verkaufen('player','IschtukPreise','Kugeln',5,.99)">
-	</BUTTON>
-	<BUTTON class="verkaufen5" style="top:280px;" id="IschtukKanonenverkaufen5" onmouseup="verkaufen('player','IschtukPreise','Kanonen',5,.99)">
-	</BUTTON>
-	<BUTTON class="verkaufen5" style="top:300px;" id="IschtukNahrungverkaufen5" onmouseup="verkaufen('player','IschtukPreise','Nahrung',5,.99)">
+	<BUTTON class="verkaufen5" style="top:300px;" id="DNahrungverkaufen5" onmouseup="verkaufen('player','DPreise','Nahrung',5,.99)">
 	</BUTTON>
 	
 
-	<BUTTON class="verkaufen10" style="top:40px;" id="IschtukKaffeeverkaufen10" onmouseup="verkaufen('player','IschtukPreise','Kaffee',10,.98)">
+	<BUTTON class="verkaufen10" style="top:40px;" id="DKaffeeverkaufen10" onmouseup="verkaufen('player','DPreise','Kaffee',10,.98)">
 	</BUTTON>
-	<BUTTON class="verkaufen10" style="top:60px;" id="IschtukTabakverkaufen10" onmouseup="verkaufen('player','IschtukPreise','Tabak',10,.98)">
+	<BUTTON class="verkaufen10" style="top:60px;" id="DTabakverkaufen10" onmouseup="verkaufen('player','DPreise','Tabak',10,.98)">
 	</BUTTON>
-	<BUTTON class="verkaufen10" style="top:80px;" id="IschtukZuckerrohrverkaufen10" onmouseup="verkaufen('player','IschtukPreise','Zuckerrohr',10,.98)">
+	<BUTTON class="verkaufen10" style="top:80px;" id="DZuckerrohrverkaufen10" onmouseup="verkaufen('player','DPreise','Zuckerrohr',10,.98)">
 	</BUTTON>
-	<BUTTON class="verkaufen10" style="top:100px;" id="IschtukRumverkaufen10" onmouseup="verkaufen('player','IschtukPreise','Rum',10,.98)">
+	<BUTTON class="verkaufen10" style="top:100px;" id="DRumverkaufen10" onmouseup="verkaufen('player','DPreise','Rum',10,.98)">
 	</BUTTON>
-	<BUTTON class="verkaufen10" style="top:120px;" id="IschtukBaumwolleverkaufen10" onmouseup="verkaufen('player','IschtukPreise','Baumwolle',10,.98)">
+	<BUTTON class="verkaufen10" style="top:120px;" id="DBaumwolleverkaufen10" onmouseup="verkaufen('player','DPreise','Baumwolle',10,.98)">
 	</BUTTON>
-	<BUTTON class="verkaufen10" style="top:140px;" id="IschtukPerlenverkaufen10" onmouseup="verkaufen('player','IschtukPreise','Perlen',10,.98)">
+	<BUTTON class="verkaufen10" style="top:140px;" id="DPerlenverkaufen10" onmouseup="verkaufen('player','DPreise','Perlen',10,.98)">
 	</BUTTON>
-	<BUTTON class="verkaufen10" style="top:160px;" id="IschtukSegeltuchverkaufen10" onmouseup="verkaufen('player','IschtukPreise','Segeltuch',10,.98)">
+	<BUTTON class="verkaufen10" style="top:160px;" id="DSegeltuchverkaufen10" onmouseup="verkaufen('player','DPreise','Segeltuch',10,.98)">
 	</BUTTON>
-	<BUTTON class="verkaufen10" style="top:180px;" id="IschtukHanfverkaufen10" onmouseup="verkaufen('player','IschtukPreise','Hanf',10,.98)">
+	<BUTTON class="verkaufen10" style="top:180px;" id="DHanfverkaufen10" onmouseup="verkaufen('player','DPreise','Hanf',10,.98)">
 	</BUTTON>
-	<BUTTON class="verkaufen10" style="top:200px;" id="IschtukTeerverkaufen10" onmouseup="verkaufen('player','IschtukPreise','Teer',10,.98)">
+	<BUTTON class="verkaufen10" style="top:200px;" id="DTeerverkaufen10" onmouseup="verkaufen('player','DPreise','Teer',10,.98)">
 	</BUTTON>
-	<BUTTON class="verkaufen10" style="top:220px;" id="IschtukHolzverkaufen10" onmouseup="verkaufen('player','IschtukPreise','Holz',10,.98)">
+	<BUTTON class="verkaufen10" style="top:220px;" id="DHolzverkaufen10" onmouseup="verkaufen('player','DPreise','Holz',10,.98)">
 	</BUTTON>
-	<BUTTON class="verkaufen10" style="top:240px;" id="IschtukPulververkaufen10" onmouseup="verkaufen('player','IschtukPreise','Pulver',10,.98)">
+	<BUTTON class="verkaufen10" style="top:240px;" id="DPulververkaufen10" onmouseup="verkaufen('player','DPreise','Pulver',10,.98)">
 	</BUTTON>
-	<BUTTON class="verkaufen10" style="top:260px;" id="IschtukKugelnverkaufen10" onmouseup="verkaufen('player','IschtukPreise','Kugeln',10,.98)">
+	<BUTTON class="verkaufen10" style="top:260px;" id="DKugelnverkaufen10" onmouseup="verkaufen('player','DPreise','Kugeln',10,.98)">
 	</BUTTON>
-	<BUTTON class="verkaufen10" style="top:280px;" id="IschtukKanonenverkaufen10" onmouseup="verkaufen('player','IschtukPreise','Kanonen',10,.98)">
+	<BUTTON class="verkaufen10" style="top:280px;" id="DKanonenverkaufen10" onmouseup="verkaufen('player','DPreise','Kanonen',10,.98)">
 	</BUTTON>
-	<BUTTON class="verkaufen10" style="top:300px;" id="IschtukNahrungverkaufen10" onmouseup="verkaufen('player','IschtukPreise','Nahrung',10,.98)">
+	<BUTTON class="verkaufen10" style="top:300px;" id="DNahrungverkaufen10" onmouseup="verkaufen('player','DPreise','Nahrung',10,.98)">
 	</BUTTON>
 
 
-	<BUTTON class="warenBild" style="top:40px;background-image:url('images/Kaffee.png');" id="IschtukKaffeewarenBild" onmouseup="verkaufen('Ischtuk','IschtukPreise','Kaffee',10,.998)">
+	<BUTTON class="warenBild" style="top:40px;background-image:url('images/Kaffee.png');" id="DKaffeewarenBild" onmouseup="verkaufen('D','DPreise','Kaffee',10,.998)">
 	</BUTTON>
-	<BUTTON class="warenBild" style="top:60px;background-image:url('images/Tabak.png');" id="IschtukTabakwarenBild" onmouseup="verkaufen('Ischtuk','IschtukPreise','Tabak',10,.998)">
+	<BUTTON class="warenBild" style="top:60px;background-image:url('images/Tabak.png');" id="DTabakwarenBild" onmouseup="verkaufen('D','DPreise','Tabak',10,.998)">
 	</BUTTON>
-	<BUTTON class="warenBild" style="top:80px;background-image:url('images/Zuckerrohr.png');" id="IschtukZuckerrohrwarenBild" onmouseup="verkaufen('Ischtuk','IschtukPreise','Zuckerrohr',10,.998)">
+	<BUTTON class="warenBild" style="top:80px;background-image:url('images/Zuckerrohr.png');" id="DZuckerrohrwarenBild" onmouseup="verkaufen('D','DPreise','Zuckerrohr',10,.998)">
 	</BUTTON>
-	<BUTTON class="warenBild" style="top:100px;background-image:url('images/Rum.png');" id="IschtukRumwarenBild" onmouseup="verkaufen('Ischtuk','IschtukPreise','Rum',10,.998)">
+	<BUTTON class="warenBild" style="top:100px;background-image:url('images/Rum.png');" id="DRumwarenBild" onmouseup="verkaufen('D','DPreise','Rum',10,.998)">
 	</BUTTON>
-	<BUTTON class="warenBild" style="top:120px;background-image:url('images/Baumwolle.png');" id="IschtukBaumwollewarenBild" onmouseup="verkaufen('Ischtuk','IschtukPreise','Baumwolle',10,.998)">
+	<BUTTON class="warenBild" style="top:120px;background-image:url('images/Baumwolle.png');" id="DBaumwollewarenBild" onmouseup="verkaufen('D','DPreise','Baumwolle',10,.998)">
 	</BUTTON>
-	<BUTTON class="warenBild" style="top:140px;background-image:url('images/Perlen.png');" id="IschtukPerlenwarenBild" onmouseup="verkaufen('Ischtuk','IschtukPreise','Perlen',10,.998)">
+	<BUTTON class="warenBild" style="top:140px;background-image:url('images/Perlen.png');" id="DPerlenwarenBild" onmouseup="verkaufen('D','DPreise','Perlen',10,.998)">
 	</BUTTON>
-	<BUTTON class="warenBild" style="top:160px;background-image:url('images/Segeltuch.png');" id="IschtukSegeltuchwarenBild" onmouseup="verkaufen('Ischtuk','IschtukPreise','Segeltuch',10,.998)">
+	<BUTTON class="warenBild" style="top:160px;background-image:url('images/Segeltuch.png');" id="DSegeltuchwarenBild" onmouseup="verkaufen('D','DPreise','Segeltuch',10,.998)">
 	</BUTTON>
-	<BUTTON class="warenBild" style="top:180px;background-image:url('images/Hanf.png');" id="IschtukHanfwarenBild" onmouseup="verkaufen('Ischtuk','IschtukPreise','Hanf',10,.998)">
+	<BUTTON class="warenBild" style="top:180px;background-image:url('images/Hanf.png');" id="DHanfwarenBild" onmouseup="verkaufen('D','DPreise','Hanf',10,.998)">
 	</BUTTON>
-	<BUTTON class="warenBild" style="top:200px;background-image:url('images/Teer.png');" id="IschtukTeerwarenBild" onmouseup="verkaufen('Ischtuk','IschtukPreise','Teer',10,.998)">
+	<BUTTON class="warenBild" style="top:200px;background-image:url('images/Teer.png');" id="DTeerwarenBild" onmouseup="verkaufen('D','DPreise','Teer',10,.998)">
 	</BUTTON>
-	<BUTTON class="warenBild" style="top:220px;background-image:url('images/Holz.png');" id="IschtukHolzwarenBild" onmouseup="verkaufen('Ischtuk','IschtukPreise','Holz',10,.998)">
+	<BUTTON class="warenBild" style="top:220px;background-image:url('images/Holz.png');" id="DHolzwarenBild" onmouseup="verkaufen('D','DPreise','Holz',10,.998)">
 	</BUTTON>
-	<BUTTON class="warenBild" style="top:240px;background-image:url('images/Pulver.png');" id="IschtukPulverwarenBild" onmouseup="verkaufen('Ischtuk','IschtukPreise','Pulver',10,.998)">
+	<BUTTON class="warenBild" style="top:240px;background-image:url('images/Pulver.png');" id="DPulverwarenBild" onmouseup="verkaufen('D','DPreise','Pulver',10,.998)">
 	</BUTTON>
-	<BUTTON class="warenBild" style="top:260px;background-image:url('images/Kugeln.png');" id="IschtukKugelnwarenBild" onmouseup="verkaufen('Ischtuk','IschtukPreise','Kugeln',10,.998)">
+	<BUTTON class="warenBild" style="top:260px;background-image:url('images/Kugeln.png');" id="DKugelnwarenBild" onmouseup="verkaufen('D','DPreise','Kugeln',10,.998)">
 	</BUTTON>
-	<BUTTON class="warenBild" style="top:280px;background-image:url('images/Kanonen.png');" id="IschtukKanonenwarenBild" onmouseup="verkaufen('Ischtuk','IschtukPreise','Kanonen',10,.998)">
+	<BUTTON class="warenBild" style="top:280px;background-image:url('images/Kanonen.png');" id="DKanonenwarenBild" onmouseup="verkaufen('D','DPreise','Kanonen',10,.998)">
 	</BUTTON>
-	<BUTTON class="warenBild" style="top:300px;background-image:url('images/Nahrung.png');" id="IschtukNahrungwarenBild" onmouseup="verkaufen('Ischtuk','IschtukPreise','Nahrung',10,.998)">
+	<BUTTON class="warenBild" style="top:300px;background-image:url('images/Nahrung.png');" id="DNahrungwarenBild" onmouseup="verkaufen('D','DPreise','Nahrung',10,.998)">
 	</BUTTON>
 
 	<DIV class="warenName" style="top:40px;">Kaffeepreis...........</DIV>
@@ -329,56 +327,56 @@
 	<INPUT  type="text" value='' style="position:absolute;z-index:69;background-color:transparent;border:transparent;top:380px;right:64px;" id="playerGesamtGewicht">
 	
 
-	<INPUT  type="text" value='' class="warenPreis" id="IschtukKaffeePreis" style="top:40px;">
-	<INPUT  type="text" value='' class="warenPreis" id="IschtukTabakPreis" style="top:60px;">
-	<INPUT  type="text" value='' class="warenPreis" id="IschtukZuckerrohrPreis" style="top:80px;">
-	<INPUT  type="text" value='' class="warenPreis" id="IschtukRumPreis" style="top:100px;">
-	<INPUT  type="text" value='' class="warenPreis" id="IschtukBaumwollePreis" style="top:120px;">
-	<INPUT  type="text" value='' class="warenPreis" id="IschtukPerlenPreis" style="top:140px;">
-	<INPUT  type="text" value='' class="warenPreis" id="IschtukSegeltuchPreis" style="top:160px;">
-	<INPUT  type="text" value='' class="warenPreis" id="IschtukHanfPreis" style="top:180px;">
-	<INPUT  type="text" value='' class="warenPreis" id="IschtukTeerPreis" style="top:200px;">
-	<INPUT  type="text" value='' class="warenPreis" id="IschtukHolzPreis" style="top:220px;">
-	<INPUT  type="text" value='' class="warenPreis" id="IschtukPulverPreis" style="top:240px;">
-	<INPUT  type="text" value='' class="warenPreis" id="IschtukKugelnPreis" style="top:260px;">
-	<INPUT  type="text" value='' class="warenPreis" id="IschtukKanonenPreis" style="top:280px;">
-	<INPUT  type="text" value='' class="warenPreis" id="IschtukNahrungPreis" style="top:300px;">
+	<INPUT  type="text" value='' class="warenPreis" id="DKaffeePreis" style="top:40px;">
+	<INPUT  type="text" value='' class="warenPreis" id="DTabakPreis" style="top:60px;">
+	<INPUT  type="text" value='' class="warenPreis" id="DZuckerrohrPreis" style="top:80px;">
+	<INPUT  type="text" value='' class="warenPreis" id="DRumPreis" style="top:100px;">
+	<INPUT  type="text" value='' class="warenPreis" id="DBaumwollePreis" style="top:120px;">
+	<INPUT  type="text" value='' class="warenPreis" id="DPerlenPreis" style="top:140px;">
+	<INPUT  type="text" value='' class="warenPreis" id="DSegeltuchPreis" style="top:160px;">
+	<INPUT  type="text" value='' class="warenPreis" id="DHanfPreis" style="top:180px;">
+	<INPUT  type="text" value='' class="warenPreis" id="DTeerPreis" style="top:200px;">
+	<INPUT  type="text" value='' class="warenPreis" id="DHolzPreis" style="top:220px;">
+	<INPUT  type="text" value='' class="warenPreis" id="DPulverPreis" style="top:240px;">
+	<INPUT  type="text" value='' class="warenPreis" id="DKugelnPreis" style="top:260px;">
+	<INPUT  type="text" value='' class="warenPreis" id="DKanonenPreis" style="top:280px;">
+	<INPUT  type="text" value='' class="warenPreis" id="DNahrungPreis" style="top:300px;">
 </DIV>
 	
 	
 </DIV>
-<DIV id="IschtukHafen">
+<DIV id="DHafen">
 	<IMG alt src="images/StadtHafen.png" style="position:absolute;right:0px;z-index:12;top:35px;width:600px;height:450px;">
-	<IMG alt src="images/ExpeditionsSchiff.png" onmousedown="IschtukHafenExpeditionsSchiff()" style="position:absolute;left:0px;z-index:16;top:285px;width:180px;height:160px;">
+	<IMG alt src="images/ExpeditionsSchiff.png" onmousedown="DHafenExpeditionsSchiff()" style="position:absolute;left:0px;z-index:16;top:285px;width:180px;height:160px;">
 	<IMG alt src="images/HafenUpgrade.png" onmousedown="HafenUpgrade()" style="position:absolute;right:7px;z-index:20;top:200px;width:236px;height:115px;">
-	<IMG alt src="images/Angeln.png" onmousedown="IschtukHafenAngeln()" style="position:absolute;left:232px;z-index:16;top:347px;width:136px;height:135px;">
+	<IMG alt src="images/Angeln.png" onmousedown="DHafenAngeln()" style="position:absolute;left:232px;z-index:16;top:347px;width:136px;height:135px;">
 	<IMG alt src="images/KistenSammeln.png" onmousedown="MiniGame()" style="position:absolute;left:232px;z-index:16;top:200px;width:90px;height:90px;">
-	<DIV id="IschtukHafenUpgradeExitKnopf" onmousedown="IschtukHafenUpgradeExit()"></DIV>
-	<DIV id="IschtukHafenExitKnopf" onmousedown="IschtukHafenExit()"></DIV>
-	<DIV id="IschtukHafenReparierenKnopf" onmousedown="IschtukHafenReparieren()"></DIV>
+	<DIV id="DHafenUpgradeExitKnopf" onmousedown="DHafenUpgradeExit()"></DIV>
+	<DIV id="DHafenExitKnopf" onmousedown="DHafenExit()"></DIV>
+	<DIV id="DHafenReparierenKnopf" onmousedown="DHafenReparieren()"></DIV>
 	<DIV id="HafenUpgradeFenster" style="position:absolute;visibility:hidden;background-image:url('images/HafenUpgradeFenster.png');width:600px;height:450px;right:0px;;z-index:35;top:35px;">
 		<IMG alt src="images/Takelage.png" onmousedown="Takelage()" style="position:absolute;left:70px;z-index:16;top:160px;width:90px;height:90px;">
 		<IMG alt src="images/Rumpf.png" onmousedown="Rumpf()" style="position:absolute;left:250px;z-index:16;top:120px;width:90px;height:90px;">
 		<IMG alt src="images/Service.png" onmousedown="Service()" style="position:absolute;left:410px;z-index:16;top:140px;width:90px;height:90px;">
 	
 	</DIV>
-	<DIV id="IschtukTakelageFenster" style="position:absolute;visibility:hidden;background-image:url('images/IschtukTakelageFenster.png');width:600px;height:450px;right:0px;z-index:65;top:35px;">
+	<DIV id="DTakelageFenster" style="position:absolute;visibility:hidden;background-image:url('images/DTakelageFenster.png');width:600px;height:450px;right:0px;z-index:65;top:35px;">
 		<IMG alt src="images/TakelageUpgrade.png" onmousedown="TakelageUpgrade()" style="position:absolute;left:70px;z-index:56;top:160px;width:90px;height:90px;">
 		<IMG alt src="images/Exit.png" onmousedown="TakelageZu()" style="position:absolute;left:170px;z-index:56;top:160px;width:90px;height:90px;">
 	</DIV>
-	<DIV id="IschtukRumpfFenster" style="position:absolute;visibility:hidden;background-image:url('images/IschtukRumpfFenster.png');width:600px;height:450px;right:0px;z-index:65;top:35px;">
+	<DIV id="DRumpfFenster" style="position:absolute;visibility:hidden;background-image:url('images/DRumpfFenster.png');width:600px;height:450px;right:0px;z-index:65;top:35px;">
 		<IMG alt src="images/RumpfUpgrade.png" onmousedown="RumpfUpgrade()" style="position:absolute;left:70px;z-index:56;top:160px;width:90px;height:90px;">
 		<IMG alt src="images/Exit.png" onmousedown="RumpfZu()" style="position:absolute;left:170px;z-index:56;top:160px;width:90px;height:90px;">
 	</DIV>
-	<DIV id="IschtukServiceFenster" style="position:absolute;visibility:hidden;background-image:url('images/IschtukServiceFenster.png');width:600px;height:450px;right:0px;z-index:65;top:35px;">
+	<DIV id="DServiceFenster" style="position:absolute;visibility:hidden;background-image:url('images/DServiceFenster.png');width:600px;height:450px;right:0px;z-index:65;top:35px;">
 		<IMG alt src="images/ServiceUpgrade.png" onmousedown="SeviceUpgrade()" style="position:absolute;left:70px;z-index:56;top:160px;width:90px;height:90px;">
 		<IMG alt src="images/Exit.png" onmousedown="ServiceZu()" style="position:absolute;left:170px;z-index:56;top:160px;width:90px;height:90px;">
 	</DIV>
 	</DIV>
-	<DIV id="IschtukGovernour">
-		<DIV id="IschtukGovernourExitKnopf" onmousedown="IschtukGovernourExit()"></DIV>
-		<DIV id="IschtukGovernourInfoKnopf" onmousedown="IschtukGovernourInfo()"></DIV>
-		<DIV id="IschtukGovernourHomeKnopf" onmousedown="IschtukGovernourHome()"></DIV>
+	<DIV id="DGovernour">
+		<DIV id="DGovernourExitKnopf" onmousedown="DGovernourExit()"></DIV>
+		<DIV id="DGovernourInfoKnopf" onmousedown="DGovernourInfo()"></DIV>
+		<DIV id="DGovernourHomeKnopf" onmousedown="DGovernourHome()"></DIV>
 	</DIV>
 </DIV>
 <DIV id="Log2" onmousedown="schiffZu2()">
@@ -399,37 +397,37 @@
 <INPUT  type="text" class="LogFeld" style="top:300px;" id="LogKanonen" value="0">
 <INPUT  type="text" class="LogFeld" style="top:320px;" id="LogNahrung" value="0">
 
-	<BUTTON class="LogwarenBild" style="top:20px;background-image:url('images/Leute.png');" id="IschtukP2KaffeewarenBild" onMouseOver="info('Kaffee')">
+	<BUTTON class="LogwarenBild" style="top:20px;background-image:url('images/Leute.png');" id="DP2KaffeewarenBild" onmouseover="info('Kaffee')">
 	</BUTTON>
-	<BUTTON class="LogwarenBild" style="top:40px;background-image:url('images/Geld.png');" id="IschtukP2KaffeewarenBild" onMouseOver="info('Kaffee')">
+	<BUTTON class="LogwarenBild" style="top:40px;background-image:url('images/Geld.png');" id="DP2KaffeewarenBild" onmouseover="info('Kaffee')">
 	</BUTTON>
-	<BUTTON class="LogwarenBild" style="top:60px;background-image:url('images/Kaffee.png');" id="IschtukP2KaffeewarenBild" onMouseOver="info('Kaffee')">
+	<BUTTON class="LogwarenBild" style="top:60px;background-image:url('images/Kaffee.png');" id="DP2KaffeewarenBild" onmouseover="info('Kaffee')">
 	</BUTTON>
-	<BUTTON class="LogwarenBild" style="top:80px;background-image:url('images/Tabak.png');" id="IschtukP2TabakwarenBild" onMouseOver="info('Tabak')">
+	<BUTTON class="LogwarenBild" style="top:80px;background-image:url('images/Tabak.png');" id="DP2TabakwarenBild" onmouseover="info('Tabak')">
 	</BUTTON>
-	<BUTTON class="LogwarenBild" style="top:100px;background-image:url('images/Zuckerrohr.png');" id="IschtukP2ZuckerrohrwarenBild" onMouseOver="info('Zuckerrohr')">
+	<BUTTON class="LogwarenBild" style="top:100px;background-image:url('images/Zuckerrohr.png');" id="DP2ZuckerrohrwarenBild" onmouseover="info('Zuckerrohr')">
 	</BUTTON>
-	<BUTTON class="LogwarenBild" style="top:120px;background-image:url('images/Rum.png');" id="IschtukP2RumwarenBild" onMouseOver="info('Rum')">
+	<BUTTON class="LogwarenBild" style="top:120px;background-image:url('images/Rum.png');" id="DP2RumwarenBild" onmouseover="info('Rum')">
 	</BUTTON>
-	<BUTTON class="LogwarenBild" style="top:140px;background-image:url('images/Baumwolle.png');" id="IschtukP2BaumwollewarenBild" onMouseOver="info('Baumwolle')">
+	<BUTTON class="LogwarenBild" style="top:140px;background-image:url('images/Baumwolle.png');" id="DP2BaumwollewarenBild" onmouseover="info('Baumwolle')">
 	</BUTTON>
-	<BUTTON class="LogwarenBild" style="top:160px;background-image:url('images/Perlen.png');" id="IschtukP2PerlenwarenBild" onMouseOver="info('Perlen')">
+	<BUTTON class="LogwarenBild" style="top:160px;background-image:url('images/Perlen.png');" id="DP2PerlenwarenBild" onmouseover="info('Perlen')">
 	</BUTTON>
-	<BUTTON class="LogwarenBild" style="top:180px;background-image:url('images/Segeltuch.png');" id="IschtukP2SegeltuchwarenBild" onMouseOver="info('Segeltuch')">
+	<BUTTON class="LogwarenBild" style="top:180px;background-image:url('images/Segeltuch.png');" id="DP2SegeltuchwarenBild" onmouseover="info('Segeltuch')">
 	</BUTTON>
-	<BUTTON class="LogwarenBild" style="top:200px;background-image:url('images/Hanf.png');" id="IschtukP2HanfwarenBild" onMouseOver="info('Hanf')">
+	<BUTTON class="LogwarenBild" style="top:200px;background-image:url('images/Hanf.png');" id="DP2HanfwarenBild" onmouseover="info('Hanf')">
 	</BUTTON>
-	<BUTTON class="LogwarenBild" style="top:220px;background-image:url('images/Teer.png');" id="IschtukP2TeerwarenBild" onMouseOver="info('Teer')">
+	<BUTTON class="LogwarenBild" style="top:220px;background-image:url('images/Teer.png');" id="DP2TeerwarenBild" onmouseover="info('Teer')">
 	</BUTTON>
-	<BUTTON class="LogwarenBild" style="top:240px;background-image:url('images/Holz.png');" id="IschtukP2HolzwarenBild" onMouseOver="info('Holz')">
+	<BUTTON class="LogwarenBild" style="top:240px;background-image:url('images/Holz.png');" id="DP2HolzwarenBild" onmouseover="info('Holz')">
 	</BUTTON>
-	<BUTTON class="LogwarenBild" style="top:260px;background-image:url('images/Pulver.png');" id="IschtukP2PulverwarenBild" onMouseOver="info('Pulver')">
+	<BUTTON class="LogwarenBild" style="top:260px;background-image:url('images/Pulver.png');" id="DP2PulverwarenBild" onmouseover="info('Pulver')">
 	</BUTTON>
-	<BUTTON class="LogwarenBild" style="top:280px;background-image:url('images/Kugeln.png');" id="IschtukP2KugelnwarenBild" onMouseOver="info('Kugeln')">
+	<BUTTON class="LogwarenBild" style="top:280px;background-image:url('images/Kugeln.png');" id="DP2KugelnwarenBild" onmouseover="info('Kugeln')">
 	</BUTTON>
-	<BUTTON class="LogwarenBild" style="top:300px;background-image:url('images/Kanonen.png');" id="IschtukP2KanonenwarenBild" onMouseOver="info('Kanonen')">
+	<BUTTON class="LogwarenBild" style="top:300px;background-image:url('images/Kanonen.png');" id="DP2KanonenwarenBild" onmouseover="info('Kanonen')">
 	</BUTTON>
-	<BUTTON class="LogwarenBild" style="top:320px;background-image:url('images/Nahrung.png');" id="IschtukP2NahrungwarenBild" onMouseOver="info('Nahrung')">
+	<BUTTON class="LogwarenBild" style="top:320px;background-image:url('images/Nahrung.png');" id="DP2NahrungwarenBild" onmouseover="info('Nahrung')">
 	</BUTTON>
 
 </DIV>

@@ -41,17 +41,17 @@ height:80px;
 width:100px;
 background-color:Transparent;
 }
-#Ischtuk{
+#D{
 position:absolute;
-background-image:url('images/Ischtuk.png');
+background-image:url('images/D.png');
 right:20px;
 z-index:34;
 height:120px;
 width:600px;
 background-color:Transparent;
 }
-#IschtukHafenBild{
-background-image:url('images/IschtukHafenBild.png');
+#DHafenBild{
+background-image:url('images/DHafenBild.png');
 position:absolute;
 left:20px;
 z-index:34;
@@ -59,7 +59,7 @@ height:60px;
 width:60px;
 background-color:transparent;
 }
-#IschtukExit{
+#DExit{
 background-image:url('images/Exit.png');
 position:absolute;
 z-index:34;
@@ -68,7 +68,7 @@ height:60px;
 width:60px;
 background-color:transparent;
 }
-#IschtukLeute{
+#DLeute{
 position:absolute;
 top:-5px;
 height:23px;
@@ -78,7 +78,7 @@ font-size:16px;
 color:green;
 left:90px;
 }
-#IschtukGeld{
+#DGeld{
 position:absolute;
 top:30px;
 height:23px;
@@ -88,7 +88,7 @@ font-size:16px;
 color:green;
 left:90px;
 }
-#IschtukNahrung{
+#DNahrung{
 position:absolute;
 top:65px;
 height:23px;
@@ -98,7 +98,7 @@ font-size:16px;
 color:green;
 left:90px;
 }
-#IschtukTaverneAnheuern{
+#DTaverneAnheuern{
 background-image:url('images/Anheuern.png');
 position:absolute;
 z-index:34;
@@ -107,7 +107,7 @@ height:60px;
 width:60px;
 background-color:transparent;
 }
-#IschtukTaverneExit{
+#DTaverneExit{
 background-image:url('images/exit.png');
 position:absolute;
 z-index:34;
@@ -116,7 +116,7 @@ height:60px;
 width:60px;
 background-color:transparent;
 }
-#IschtukTaverneKnopf{
+#DTaverneKnopf{
 background-image:url('images/Taverne.png');
 position:absolute;
 z-index:34;
@@ -126,7 +126,7 @@ width:60px;
 background-color:transparent;
 }
 
-#IschtukTaverne{
+#DTaverne{
 visibility:hidden;
 background-image:url('images/TaverneLeer.png');
 position:absolute;
@@ -136,7 +136,7 @@ z-index:14;
 height:450px;
 width:600px;
 }
-#IschtukTaverneFenster{
+#DTaverneFenster{
 background-image:url('images/Wolken100X100.png');
 position:absolute;
 top:36px;
@@ -144,7 +144,7 @@ right:144px;
 height:100px;
 width:100px;
 }
-#IschtukTaverneFenster2{
+#DTaverneFenster2{
 background-image:url('images/Fenster.png');
 position:absolute;
 top:30px;
@@ -152,7 +152,7 @@ right:130px;
 height:112px;
 width:129px;
 }
-#IschtukTaverneTheke{
+#DTaverneTheke{
 background-image:url('images/TaverneThekeLeer.png');
 position:absolute;
 top:0px;
@@ -161,7 +161,7 @@ z-index:11;
 height:450px;
 width:600px;
 }
-#IschtukTaverneLeute{
+#DTaverneLeute{
 background-image:url('images/TaverneLeute.png');
 position:absolute;
 top:137px;
@@ -170,7 +170,7 @@ z-index:16;
 height:165px;
 width:165px;
 }
-#IschtukTaverneHund{
+#DTaverneHund{
 background-image:url('images/Hund1.png');
 position:absolute;
 top:237px;
@@ -179,7 +179,7 @@ z-index:12;
 height:90px;
 width:90px;
 }
-#IschtukTaverneBilderRahmenSchiff{
+#DTaverneBilderRahmenSchiff{
 background-image:url('images/BilderRahmenSchiff.png');
 position:absolute;
 top:50px;
@@ -188,7 +188,7 @@ z-index:12;
 height:73px;
 width:100px;
 }
-#IschtukTaverneBilderRahmenSchiff2{
+#DTaverneBilderRahmenSchiff2{
 background-image:url('images/BilderRahmenSchiff2.png');
 position:absolute;
 top:70px;
@@ -197,7 +197,7 @@ z-index:12;
 height:89px;
 width:33px;
 }
-#IschtukTaverneBarceeper{
+#DTaverneBarceeper{
 background-image:url('images/TaverneBarceeper.png');
 position:absolute;
 top:139px;
@@ -206,7 +206,7 @@ z-index:16;
 height:50px;
 width:50px;
 }
-#IschtukTaverneSchatzKarte{
+#DTaverneSchatzKarte{
 background-image:url('images/TaverneSchatzKarte.png');
 position:absolute;
 top:259px;
@@ -215,7 +215,7 @@ z-index:16;
 height:169px;
 width:157px;
 }
-#IschtukTavernePersonal{
+#DTavernePersonal{
 background-image:url('images/TavernePersonal.png');
 position:absolute;
 top:265px;
@@ -224,7 +224,7 @@ z-index:36;
 height:174px;
 width:220px;
 }
-#IschtukKontor{
+#DKontor{
 visibility:hidden;
 position:absolute;
 top:90px;
@@ -233,7 +233,7 @@ z-index:14;
 height:80px;
 width:600px;
 }
-#IschtukKontorExitKnopf{
+#DKontorExitKnopf{
 background-image:url('images/exit.png');
 position:absolute;
 z-index:80;
@@ -244,7 +244,7 @@ width:60px;
 background-color:transparent;
 }
 
-#IschtukKontorKaufenKnopf{
+#DKontorKaufenKnopf{
 background-image:url('images/Kaufen.png');
 position:absolute;
 z-index:34;
@@ -253,7 +253,7 @@ height:60px;
 width:60px;
 background-color:transparent;
 }
-#IschtukKontorVerkaufenKnopf{
+#DKontorVerkaufenKnopf{
 background-image:url('images/Verkaufen.png');
 position:absolute;
 z-index:34;
@@ -262,7 +262,7 @@ height:60px;
 width:60px;
 background-color:transparent;
 }
-#IschtukKontorKnopf{
+#DKontorKnopf{
 background-image:url('images/Kontor.png');
 position:absolute;
 z-index:34;
@@ -271,7 +271,7 @@ height:60px;
 width:60px;
 background-color:transparent;
 }
-#Ischtukkontorbild{
+#Dkontorbild{
 position:absolute;
 background-image:url('images/Kontorbild.png');
 width:420px;
@@ -360,7 +360,7 @@ background-color:#FF1414;
 width:20px;
 height:20px;
 }
-#IschtukHafen{
+#DHafen{
 visibility:hidden;
 position:absolute;
 top:90px;
@@ -370,7 +370,7 @@ height:80px;
 width:600px;
 background-color:transparent;
 }
-#IschtukHafenExitKnopf{
+#DHafenExitKnopf{
 background-image:url('images/exit.png');
 position:absolute;
 z-index:34;
@@ -380,7 +380,7 @@ height:60px;
 width:60px;
 background-color:transparent;
 }
-#IschtukHafenUpgradeExitKnopf{
+#DHafenUpgradeExitKnopf{
 visibility:hidden;
 background-image:url('images/exit.png');
 position:absolute;
@@ -391,7 +391,7 @@ height:60px;
 width:60px;
 background-color:transparent;
 }
-#IschtukHafenReparierenKnopf{
+#DHafenReparierenKnopf{
 background-image:url('images/Reparieren.png');
 position:absolute;
 z-index:34;
@@ -401,7 +401,7 @@ height:60px;
 width:60px;
 background-color:transparent;
 }
-#IschtukHafenKnopf{
+#DHafenKnopf{
 background-image:url('images/Hafen.png');
 position:absolute;
 z-index:34;
@@ -410,7 +410,7 @@ height:60px;
 width:60px;
 background-color:transparent;
 }
-#IschtukGovernour{
+#DGovernour{
 visibility:hidden;
 background-image:url('images/Stadt.png');
 position:absolute;
@@ -421,7 +421,7 @@ height:80px;
 width:600px;
 background-color:transparent;
 }
-#IschtukGovernourExitKnopf{
+#DGovernourExitKnopf{
 background-image:url('images/exit.png');
 position:absolute;
 z-index:34;
@@ -430,7 +430,7 @@ height:60px;
 width:60px;
 background-color:transparent;
 }
-#IschtukGovernourInfoKnopf{
+#DGovernourInfoKnopf{
 background-image:url('images/Info.png');
 position:absolute;
 z-index:34;
@@ -439,7 +439,7 @@ height:60px;
 width:60px;
 background-color:transparent;
 }
-#IschtukGovernourHomeKnopf{
+#DGovernourHomeKnopf{
 background-image:url('images/Home.png');
 position:absolute;
 z-index:34;
@@ -448,7 +448,7 @@ height:60px;
 width:60px;
 background-color:transparent;
 }
-#IschtukGovernourKnopf{
+#DGovernourKnopf{
 background-image:url('images/Governour.png');
 position:absolute;
 z-index:34;
