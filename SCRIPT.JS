@@ -1,5 +1,6 @@
 //classes
-Stadt=function(){
+Stadt=function()
+{
 	this.id;
 	this.Leute;
 	this.Geld;
@@ -21,7 +22,8 @@ Stadt=function(){
 	this.Kanonen;
 }
 
-player=function(){
+player=function()
+{
 	this.id;
 	this.Leute;
 	this.Geld;
@@ -41,7 +43,8 @@ player=function(){
 	this.Kanonen;
 }
 
-Ware=function(){
+Ware=function()
+{
 	this.id;
 	this.gewicht;
 	this.menge
@@ -56,86 +59,85 @@ var MaximalGeschwindigkeit=0.4;
 var ServiceWert=0;
 var SchiffZustand=0;
 
-	Ischtuk=new Stadt();
-	Ischtuk.id='Ischtuk';
-	Ischtuk.Leute=200;
-	Ischtuk.Geld=1734;
-	Ischtuk.Nahrung=1545;
-	Ischtuk.ReparierKurs=5;
-	Ischtuk.KaufKurs=5;
-	Ischtuk.Kaffee=5;
-	Ischtuk.Tabak=4;
-	Ischtuk.Zuckerrohr=4;
-	Ischtuk.Rum=32;
-	Ischtuk.Baumwolle=2;
-	Ischtuk.Perlen=356;
-	Ischtuk.Segeltuch=9;
-	Ischtuk.Hanf=4;
-	Ischtuk.Teer=20;
-	Ischtuk.Holz=23;
-	Ischtuk.Pulver=50;
-	Ischtuk.Kugeln=60;
-	Ischtuk.Kanonen=414;
-
+Ischtuk=new Stadt();
+Ischtuk.id='Ischtuk';
+Ischtuk.Leute=200;
+Ischtuk.Geld=1734;
+Ischtuk.Nahrung=1545;
+Ischtuk.ReparierKurs=5;
+Ischtuk.KaufKurs=5;
+Ischtuk.Kaffee=5;
+Ischtuk.Tabak=4;
+Ischtuk.Zuckerrohr=4;
+Ischtuk.Rum=32;
+Ischtuk.Baumwolle=2;
+Ischtuk.Perlen=356;
+Ischtuk.Segeltuch=9;
+Ischtuk.Hanf=4;
+Ischtuk.Teer=20;
+Ischtuk.Holz=23;
+Ischtuk.Pulver=50;
+Ischtuk.Kugeln=60;
+Ischtuk.Kanonen=414;
 
 IschtukPreise=new Ware();
-	IschtukPreise.id='IschtukPreise';
-	IschtukPreise.Name='Preise';
-	IschtukPreise.Nahrung=15;
-	IschtukPreise.Kaffee=15;
-	IschtukPreise.Tabak=14;
-	IschtukPreise.Zuckerrohr=14;
-	IschtukPreise.Rum=32;
-	IschtukPreise.Baumwolle=12;
-	IschtukPreise.Perlen=356;
-	IschtukPreise.Segeltuch=9;
-	IschtukPreise.Hanf=4;
-	IschtukPreise.Teer=20;
-	IschtukPreise.Holz=23;
-	IschtukPreise.Pulver=50;
-	IschtukPreise.Kugeln=60;
-	IschtukPreise.Kanonen=414;
-	
+IschtukPreise.id='IschtukPreise';
+IschtukPreise.Name='Preise';
+IschtukPreise.Nahrung=15;
+IschtukPreise.Kaffee=15;
+IschtukPreise.Tabak=14;
+IschtukPreise.Zuckerrohr=14;
+IschtukPreise.Rum=32;
+IschtukPreise.Baumwolle=12;
+IschtukPreise.Perlen=356;
+IschtukPreise.Segeltuch=9;
+IschtukPreise.Hanf=4;
+IschtukPreise.Teer=20;
+IschtukPreise.Holz=23;
+IschtukPreise.Pulver=50;
+IschtukPreise.Kugeln=60;
+IschtukPreise.Kanonen=414;
 
 IschtukGewicht=new Ware();
-	IschtukGewicht.id='IschtukGewicht';
-	IschtukGewicht.Name='Gewicht';
-	IschtukGewicht.Nahrung=5;
-	IschtukGewicht.Kaffee=5;
-	IschtukGewicht.Tabak=5;
-	IschtukGewicht.Zuckerrohr=5;
-	IschtukGewicht.Rum=5;
-	IschtukGewicht.Baumwolle=5;
-	IschtukGewicht.Perlen=1;
-	IschtukGewicht.Segeltuch=10;
-	IschtukGewicht.Hanf=4;
-	IschtukGewicht.Teer=10;
-	IschtukGewicht.Holz=10;
-	IschtukGewicht.Pulver=50;
-	IschtukGewicht.Kugeln=50;
-	IschtukGewicht.Kanonen=200;
+IschtukGewicht.id='IschtukGewicht';
+IschtukGewicht.Name='Gewicht';
+IschtukGewicht.Nahrung=5;
+IschtukGewicht.Kaffee=5;
+IschtukGewicht.Tabak=5;
+IschtukGewicht.Zuckerrohr=5;
+IschtukGewicht.Rum=5;
+IschtukGewicht.Baumwolle=5;
+IschtukGewicht.Perlen=1;
+IschtukGewicht.Segeltuch=10;
+IschtukGewicht.Hanf=4;
+IschtukGewicht.Teer=10;
+IschtukGewicht.Holz=10;
+IschtukGewicht.Pulver=50;
+IschtukGewicht.Kugeln=50;
+IschtukGewicht.Kanonen=200;
 
 player=new player();
-	player.id='player';
+player.id='player';
 
-	player.Kaffee=5;
-	player.Tabak=5;
-	player.Zuckerrohr=5;
-	player.Rum=5;
-	player.Baumwolle=5;
-	player.Perlen=31;
-	player.Segeltuch=10;
-	player.Hanf=4;
-	player.Teer=10;
-	player.Holz=10;
-	player.Pulver=50;
-	player.Kugeln=50;
-	player.Kanonen=8;
-	player.Leute=20;
-	player.Geld=750;
-	player.Nahrung=45;
+player.Kaffee=5;
+player.Tabak=5;
+player.Zuckerrohr=5;
+player.Rum=5;
+player.Baumwolle=5;
+player.Perlen=31;
+player.Segeltuch=10;
+player.Hanf=4;
+player.Teer=10;
+player.Holz=10;
+player.Pulver=50;
+player.Kugeln=50;
+player.Kanonen=8;
+player.Leute=20;
+player.Geld=750;
+player.Nahrung=45;
 
-function WerteChecker(){
+function WerteChecker()
+{
 var IschtukGesamtGewicht=((player.Kaffee*IschtukGewicht.Kaffee)+(player.Tabak*IschtukGewicht.Tabak)+(player.Zuckerrohr*IschtukGewicht.Zuckerrohr)+(player.Rum*IschtukGewicht.Rum)+(player.Baumwolle*IschtukGewicht.Baumwolle)+(player.Perlen*IschtukGewicht.Perlen)+(player.Segeltuch*IschtukGewicht.Segeltuch)+(player.Hanf*IschtukGewicht.Hanf)+(player.Teer*IschtukGewicht.Teer)+(player.Holz*IschtukGewicht.Holz)+(player.Pulver*IschtukGewicht.Pulver)+(player.Kugeln*IschtukGewicht.Kugeln)+(player.Kanonen*IschtukGewicht.Kanonen)+(player.Nahrung*IschtukGewicht.Nahrung));
 
 $('IschtukLeute').value=Ischtuk.Leute;
