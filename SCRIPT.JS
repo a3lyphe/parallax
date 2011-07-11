@@ -1,51 +1,52 @@
 //classes
+Stadt=function(){
+	this.id;
+	this.Leute;
+	this.Geld;
+	this.Nahrung;
+	this.ReparierKurs;
+	this.KaufKurs;
+	this.Kaffee;
+	this.Tabak;
+	this.Zuckerrohr;
+	this.Rum;
+	this.Baumwolle;
+	this.Perlen;
+	this.Segeltuch;
+	this.Hanf;
+	this.Teer;
+	this.Holz;
+	this.Pulver;
+	this.Kugeln;
+	this.Kanonen;
+}
 
-	Stadt=function(){
-		this.id;
-		this.Leute;
-		this.Geld;
-		this.Nahrung;
-		this.ReparierKurs;
-		this.KaufKurs;
-		this.Kaffee;
-		this.Tabak;
-		this.Zuckerrohr;
-		this.Rum;
-		this.Baumwolle;
-		this.Perlen;
-		this.Segeltuch;
-		this.Hanf;
-		this.Teer;
-		this.Holz;
-		this.Pulver;
-		this.Kugeln;
-		this.Kanonen;
-	}
-	player=function(){
-		this.id;
-		this.Leute;
-		this.Geld;
-		this.Nahrung;
-		this.Kaffee;
-		this.Tabak;
-		this.Zuckerrohr;
-		this.Rum;
-		this.Baumwolle;
-		this.Perlen;
-		this.Segeltuch;
-		this.Hanf;
-		this.Teer;
-		this.Holz;
-		this.Pulver;
-		this.Kugeln;
-		this.Kanonen;
-	}
-	Ware=function(){
-		this.id;
-		this.gewicht;
-		this.menge
-		
-	}
+player=function(){
+	this.id;
+	this.Leute;
+	this.Geld;
+	this.Nahrung;
+	this.Kaffee;
+	this.Tabak;
+	this.Zuckerrohr;
+	this.Rum;
+	this.Baumwolle;
+	this.Perlen;
+	this.Segeltuch;
+	this.Hanf;
+	this.Teer;
+	this.Holz;
+	this.Pulver;
+	this.Kugeln;
+	this.Kanonen;
+}
+
+Ware=function(){
+	this.id;
+	this.gewicht;
+	this.menge
+	
+}
 
 var $=function(id){ return document.getElementById(id); };
 var dc=function(tag){ return document.createElement(tag); };
