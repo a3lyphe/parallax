@@ -1,145 +1,148 @@
 //classes
+Stadt=function()
+{
+	this.id;
+	this.Leute;
+	this.Geld;
+	this.Nahrung;
+	this.ReparierKurs;
+	this.KaufKurs;
+	this.Kaffee;
+	this.Tabak;
+	this.Zuckerrohr;
+	this.Rum;
+	this.Baumwolle;
+	this.Perlen;
+	this.Segeltuch;
+	this.Hanf;
+	this.Teer;
+	this.Holz;
+	this.Pulver;
+	this.Kugeln;
+	this.Kanonen;
+}
 
-	Stadt=function(){
-		this.id;
-		this.Leute;
-		this.Geld;
-		this.Nahrung;
-		this.ReparierKurs;
-		this.KaufKurs;
-		this.Kaffee;
-		this.Tabak;
-		this.Zuckerrohr;
-		this.Rum;
-		this.Baumwolle;
-		this.Perlen;
-		this.Segeltuch;
-		this.Hanf;
-		this.Teer;
-		this.Holz;
-		this.Pulver;
-		this.Kugeln;
-		this.Kanonen;
-	}
-	player=function(){
-		this.id;
-		this.Leute;
-		this.Geld;
-		this.Nahrung;
-		this.Kaffee;
-		this.Tabak;
-		this.Zuckerrohr;
-		this.Rum;
-		this.Baumwolle;
-		this.Perlen;
-		this.Segeltuch;
-		this.Hanf;
-		this.Teer;
-		this.Holz;
-		this.Pulver;
-		this.Kugeln;
-		this.Kanonen;
-	}
-	Ware=function(){
-		this.id;
-		this.gewicht;
-		this.menge
-		
-	}
+player=function()
+{
+	this.id;
+	this.Leute;
+	this.Geld;
+	this.Nahrung;
+	this.Kaffee;
+	this.Tabak;
+	this.Zuckerrohr;
+	this.Rum;
+	this.Baumwolle;
+	this.Perlen;
+	this.Segeltuch;
+	this.Hanf;
+	this.Teer;
+	this.Holz;
+	this.Pulver;
+	this.Kugeln;
+	this.Kanonen;
+}
+
+Ware=function()
+{
+	this.id;
+	this.gewicht;
+	this.menge
+	
+}
 
 var $=function(id){ return document.getElementById(id); };
 var dc=function(tag){ return document.createElement(tag); };
-var IschtukAnheuernCounter=0;
+var DAnheuernCounter=0;
 var MaximalLadung=10000;
 var MaximalGeschwindigkeit=0.4;
 var ServiceWert=0;
 var SchiffZustand=0;
 
-	Ischtuk=new Stadt();
-	Ischtuk.id='Ischtuk';
-	Ischtuk.Leute=200;
-	Ischtuk.Geld=1734;
-	Ischtuk.Nahrung=1545;
-	Ischtuk.ReparierKurs=5;
-	Ischtuk.KaufKurs=5;
-	Ischtuk.Kaffee=5;
-	Ischtuk.Tabak=4;
-	Ischtuk.Zuckerrohr=4;
-	Ischtuk.Rum=32;
-	Ischtuk.Baumwolle=2;
-	Ischtuk.Perlen=356;
-	Ischtuk.Segeltuch=9;
-	Ischtuk.Hanf=4;
-	Ischtuk.Teer=20;
-	Ischtuk.Holz=23;
-	Ischtuk.Pulver=50;
-	Ischtuk.Kugeln=60;
-	Ischtuk.Kanonen=414;
+D=new Stadt();
+D.id='D';
+D.Leute=200;
+D.Geld=1734;
+D.Nahrung=1545;
+D.ReparierKurs=5;
+D.KaufKurs=5;
+D.Kaffee=5;
+D.Tabak=4;
+D.Zuckerrohr=4;
+D.Rum=32;
+D.Baumwolle=2;
+D.Perlen=356;
+D.Segeltuch=9;
+D.Hanf=4;
+D.Teer=20;
+D.Holz=23;
+D.Pulver=50;
+D.Kugeln=60;
+D.Kanonen=414;
 
+DPreise=new Ware();
+DPreise.id='DPreise';
+DPreise.Name='Preise';
+DPreise.Nahrung=15;
+DPreise.Kaffee=15;
+DPreise.Tabak=14;
+DPreise.Zuckerrohr=14;
+DPreise.Rum=32;
+DPreise.Baumwolle=12;
+DPreise.Perlen=356;
+DPreise.Segeltuch=9;
+DPreise.Hanf=4;
+DPreise.Teer=20;
+DPreise.Holz=23;
+DPreise.Pulver=50;
+DPreise.Kugeln=60;
+DPreise.Kanonen=414;
 
-IschtukPreise=new Ware();
-	IschtukPreise.id='IschtukPreise';
-	IschtukPreise.Name='Preise';
-	IschtukPreise.Nahrung=15;
-	IschtukPreise.Kaffee=15;
-	IschtukPreise.Tabak=14;
-	IschtukPreise.Zuckerrohr=14;
-	IschtukPreise.Rum=32;
-	IschtukPreise.Baumwolle=12;
-	IschtukPreise.Perlen=356;
-	IschtukPreise.Segeltuch=9;
-	IschtukPreise.Hanf=4;
-	IschtukPreise.Teer=20;
-	IschtukPreise.Holz=23;
-	IschtukPreise.Pulver=50;
-	IschtukPreise.Kugeln=60;
-	IschtukPreise.Kanonen=414;
-	
-
-IschtukGewicht=new Ware();
-	IschtukGewicht.id='IschtukGewicht';
-	IschtukGewicht.Name='Gewicht';
-	IschtukGewicht.Nahrung=5;
-	IschtukGewicht.Kaffee=5;
-	IschtukGewicht.Tabak=5;
-	IschtukGewicht.Zuckerrohr=5;
-	IschtukGewicht.Rum=5;
-	IschtukGewicht.Baumwolle=5;
-	IschtukGewicht.Perlen=1;
-	IschtukGewicht.Segeltuch=10;
-	IschtukGewicht.Hanf=4;
-	IschtukGewicht.Teer=10;
-	IschtukGewicht.Holz=10;
-	IschtukGewicht.Pulver=50;
-	IschtukGewicht.Kugeln=50;
-	IschtukGewicht.Kanonen=200;
+DGewicht=new Ware();
+DGewicht.id='DGewicht';
+DGewicht.Name='Gewicht';
+DGewicht.Nahrung=5;
+DGewicht.Kaffee=5;
+DGewicht.Tabak=5;
+DGewicht.Zuckerrohr=5;
+DGewicht.Rum=5;
+DGewicht.Baumwolle=5;
+DGewicht.Perlen=1;
+DGewicht.Segeltuch=10;
+DGewicht.Hanf=4;
+DGewicht.Teer=10;
+DGewicht.Holz=10;
+DGewicht.Pulver=50;
+DGewicht.Kugeln=50;
+DGewicht.Kanonen=200;
 
 player=new player();
-	player.id='player';
+player.id='player';
 
-	player.Kaffee=5;
-	player.Tabak=5;
-	player.Zuckerrohr=5;
-	player.Rum=5;
-	player.Baumwolle=5;
-	player.Perlen=31;
-	player.Segeltuch=10;
-	player.Hanf=4;
-	player.Teer=10;
-	player.Holz=10;
-	player.Pulver=50;
-	player.Kugeln=50;
-	player.Kanonen=8;
-	player.Leute=20;
-	player.Geld=750;
-	player.Nahrung=45;
+player.Kaffee=5;
+player.Tabak=5;
+player.Zuckerrohr=5;
+player.Rum=5;
+player.Baumwolle=5;
+player.Perlen=31;
+player.Segeltuch=10;
+player.Hanf=4;
+player.Teer=10;
+player.Holz=10;
+player.Pulver=50;
+player.Kugeln=50;
+player.Kanonen=8;
+player.Leute=20;
+player.Geld=750;
+player.Nahrung=45;
 
-function WerteChecker(){
-var IschtukGesamtGewicht=((player.Kaffee*IschtukGewicht.Kaffee)+(player.Tabak*IschtukGewicht.Tabak)+(player.Zuckerrohr*IschtukGewicht.Zuckerrohr)+(player.Rum*IschtukGewicht.Rum)+(player.Baumwolle*IschtukGewicht.Baumwolle)+(player.Perlen*IschtukGewicht.Perlen)+(player.Segeltuch*IschtukGewicht.Segeltuch)+(player.Hanf*IschtukGewicht.Hanf)+(player.Teer*IschtukGewicht.Teer)+(player.Holz*IschtukGewicht.Holz)+(player.Pulver*IschtukGewicht.Pulver)+(player.Kugeln*IschtukGewicht.Kugeln)+(player.Kanonen*IschtukGewicht.Kanonen)+(player.Nahrung*IschtukGewicht.Nahrung));
+function WerteChecker()
+{
+var DGesamtGewicht=((player.Kaffee*DGewicht.Kaffee)+(player.Tabak*DGewicht.Tabak)+(player.Zuckerrohr*DGewicht.Zuckerrohr)+(player.Rum*DGewicht.Rum)+(player.Baumwolle*DGewicht.Baumwolle)+(player.Perlen*DGewicht.Perlen)+(player.Segeltuch*DGewicht.Segeltuch)+(player.Hanf*DGewicht.Hanf)+(player.Teer*DGewicht.Teer)+(player.Holz*DGewicht.Holz)+(player.Pulver*DGewicht.Pulver)+(player.Kugeln*DGewicht.Kugeln)+(player.Kanonen*DGewicht.Kanonen)+(player.Nahrung*DGewicht.Nahrung));
 
-$('IschtukLeute').value=Ischtuk.Leute;
-$('IschtukGeld').value=Ischtuk.Geld;
-$('IschtukNahrung').value=Ischtuk.Nahrung;
+$('DLeute').value=D.Leute;
+$('DGeld').value=D.Geld;
+$('DNahrung').value=D.Nahrung;
 
 $('playerKaffeeMenge').value=player.Kaffee;
 $('playerTabakMenge').value=player.Tabak;
@@ -182,108 +185,108 @@ $('SchiffZustand').value=SchiffZustand;
 
 
 
-$('IschtukKaffeePreis').value=IschtukPreise.Kaffee;
-$('IschtukTabakPreis').value=IschtukPreise.Tabak;
-$('IschtukZuckerrohrPreis').value=IschtukPreise.Zuckerrohr;
-$('IschtukRumPreis').value=IschtukPreise.Rum;
-$('IschtukBaumwollePreis').value=IschtukPreise.Baumwolle;
-$('IschtukPerlenPreis').value=IschtukPreise.Perlen;
-$('IschtukSegeltuchPreis').value=IschtukPreise.Segeltuch;
-$('IschtukHanfPreis').value=IschtukPreise.Hanf;
-$('IschtukTeerPreis').value=IschtukPreise.Teer;
-$('IschtukHolzPreis').value=IschtukPreise.Holz;
-$('IschtukPulverPreis').value=IschtukPreise.Pulver;
-$('IschtukKugelnPreis').value=IschtukPreise.Kugeln;
-$('IschtukKanonenPreis').value=IschtukPreise.Kanonen;
-$('IschtukNahrungPreis').value=IschtukPreise.Nahrung;
-$('playerGesamtGewicht').value=IschtukGesamtGewicht;
+$('DKaffeePreis').value=DPreise.Kaffee;
+$('DTabakPreis').value=DPreise.Tabak;
+$('DZuckerrohrPreis').value=DPreise.Zuckerrohr;
+$('DRumPreis').value=DPreise.Rum;
+$('DBaumwollePreis').value=DPreise.Baumwolle;
+$('DPerlenPreis').value=DPreise.Perlen;
+$('DSegeltuchPreis').value=DPreise.Segeltuch;
+$('DHanfPreis').value=DPreise.Hanf;
+$('DTeerPreis').value=DPreise.Teer;
+$('DHolzPreis').value=DPreise.Holz;
+$('DPulverPreis').value=DPreise.Pulver;
+$('DKugelnPreis').value=DPreise.Kugeln;
+$('DKanonenPreis').value=DPreise.Kanonen;
+$('DNahrungPreis').value=DPreise.Nahrung;
+$('playerGesamtGewicht').value=DGesamtGewicht;
 
 window.setTimeout(WerteChecker,100);
 }
 function Oberinit(){
 	WerteChecker()
-	warenliste=new Array(Ischtuk,player);
-	preisliste=new Array(IschtukPreise);
+	warenliste=new Array(D,player);
+	preisliste=new Array(DPreise);
 }
 
-function IschtukExit(){
-$('Ischtuk').style.visibility='hidden';
+function DExit(){
+$('D').style.visibility='hidden';
 	player.x=13;
 	player.y=13;
 	player.rot=0;
 	player.dir=0;
 }
-function IschtukTaverne(){
-$('IschtukTaverne').style.visibility='visible';
-if(IschtukAnheuernCounter<1){
-$('IschtukTaverneLeute').style.visibility='visible';
+function DTaverne(){
+$('DTaverne').style.visibility='visible';
+if(DAnheuernCounter<1){
+$('DTaverneLeute').style.visibility='visible';
 }
 }
-function IschtukAnheuern(){
-IschtukAnheuernCounter+=1;
+function DAnheuern(){
+DAnheuernCounter+=1;
 player.Leute+=parseInt(Math.random()*10)
 alert('Jetzt sind'+player.Leute+'in deiner Crew');
-if(IschtukAnheuernCounter>0){
-$('IschtukTaverneLeute').style.visibility='hidden';
+if(DAnheuernCounter>0){
+$('DTaverneLeute').style.visibility='hidden';
 }
 }
-function IschtukTaverneBarceeper(){
+function DTaverneBarceeper(){
 alert('Barceeper');
 }
-function IschtukTaverneSchatzkarte(){
+function DTaverneSchatzkarte(){
 alert('Schatzkarte');
 }
-function IschtukTavernePersonal(){
+function DTavernePersonal(){
 alert('Personal');
 }
-function IschtukTaverneHund(){
+function DTaverneHund(){
 alert('Hund');
 }
-function IschtukTaverneBilderRahmenSchiff(){
+function DTaverneBilderRahmenSchiff(){
 alert('BilderRahmenSchiff');
 }
-function IschtukTaverneBilderRahmenSchiff2(){
+function DTaverneBilderRahmenSchiff2(){
 alert('BilderRahmenSchiff2');
 }
-function IschtukTaverneFenster(){
+function DTaverneFenster(){
 alert('BildDraussen');
 }
-function IschtukTaverneFenster2(){
+function DTaverneFenster2(){
 alert('FensterRahmen');
 }
-function IschtukTaverneExit(){
-$('IschtukTaverne').style.visibility='hidden';
-$('IschtukTaverneLeute').style.visibility='hidden';
+function DTaverneExit(){
+$('DTaverne').style.visibility='hidden';
+$('DTaverneLeute').style.visibility='hidden';
 }
-function IschtukKontor(){
-$('IschtukKontor').style.visibility='visible';
+function DKontor(){
+$('DKontor').style.visibility='visible';
 }
-function IschtukKontorExit(){
-$('IschtukKontor').style.visibility='hidden';
+function DKontorExit(){
+$('DKontor').style.visibility='hidden';
 }
-function IschtukKontorKaufen(){
-	if((player.Geld-(Ischtuk.KaufKurs*10))>=0){
-		Ischtuk.Geld+=Ischtuk.KaufKurs*10;
-		Ischtuk.Nahrung-=10;
+function DKontorKaufen(){
+	if((player.Geld-(D.KaufKurs*10))>=0){
+		D.Geld+=D.KaufKurs*10;
+		D.Nahrung-=10;
 		player.Nahrung+=10;
-		player.Geld-=Ischtuk.KaufKurs*10;
+		player.Geld-=D.KaufKurs*10;
 	}
 }
-function IschtukKontorVerkaufen(){
+function DKontorVerkaufen(){
 	if(player.Nahrung-10>=0){
-		Ischtuk.Geld-=(Ischtuk.KaufKurs*.9)*10;
-		Ischtuk.Nahrung+=10;
+		D.Geld-=(D.KaufKurs*.9)*10;
+		D.Nahrung+=10;
 		player.Nahrung-=10;
-		player.Geld+=(Ischtuk.KaufKurs*.9)*10;
+		player.Geld+=(D.KaufKurs*.9)*10;
 	}
 }
 
-function IschtukHafen(){
-	$('IschtukHafen').style.visibility='visible';
+function DHafen(){
+	$('DHafen').style.visibility='visible';
 }
 function MiniGame(){
-	$('IschtukHafen').style.visibility='hidden';
-	$('Ischtuk').style.visibility='hidden';
+	$('DHafen').style.visibility='hidden';
+	$('D').style.visibility='hidden';
 	$('Minigame').style.visibility='visible';
 	ZeitCounter=0;
 	SchiffWenderCounter=0;
@@ -307,23 +310,23 @@ function MiniGame(){
 	$('Kiste6').style.visibility='visible';
 	init();
 }
-function IschtukHafenExit(){
-$('IschtukHafen').style.visibility='hidden';
-$('IschtukTakelageFenster').style.visibility='hidden';
-$('IschtukRumpfFenster').style.visibility='hidden';
-$('IschtukServiceFenster').style.visibility='hidden';
+function DHafenExit(){
+$('DHafen').style.visibility='hidden';
+$('DTakelageFenster').style.visibility='hidden';
+$('DRumpfFenster').style.visibility='hidden';
+$('DServiceFenster').style.visibility='hidden';
 $('HafenUpgradeFenster').style.visibility='hidden';
-$('IschtukHafenUpgradeExitKnopf').style.visibility='hidden';
+$('DHafenUpgradeExitKnopf').style.visibility='hidden';
 
 }
 
-function IschtukHafenUpgradeExit(){
+function DHafenUpgradeExit(){
 $('HafenUpgradeFenster').style.visibility='hidden';
-$('IschtukHafenUpgradeExitKnopf').style.visibility='hidden';
+$('DHafenUpgradeExitKnopf').style.visibility='hidden';
 }
 function HafenUpgrade(){
 $('HafenUpgradeFenster').style.visibility='visible';
-$('IschtukHafenUpgradeExitKnopf').style.visibility='visible';
+$('DHafenUpgradeExitKnopf').style.visibility='visible';
 }
 
 function schiff2(){
@@ -333,21 +336,21 @@ function schiffZu2(){
 $('Log2').style.visibility='hidden';
 }
 function Takelage(){
-$('IschtukTakelageFenster').style.visibility='visible';
+$('DTakelageFenster').style.visibility='visible';
 }
 function Rumpf(){
-$('IschtukRumpfFenster').style.visibility='visible';
+$('DRumpfFenster').style.visibility='visible';
 }
 function Service(){
-$('IschtukServiceFenster').style.visibility='visible';
+$('DServiceFenster').style.visibility='visible';
 }function TakelageZu(){
-$('IschtukTakelageFenster').style.visibility='hidden';
+$('DTakelageFenster').style.visibility='hidden';
 }
 function RumpfZu(){
-$('IschtukRumpfFenster').style.visibility='hidden';
+$('DRumpfFenster').style.visibility='hidden';
 }
 function ServiceZu(){
-$('IschtukServiceFenster').style.visibility='hidden';
+$('DServiceFenster').style.visibility='hidden';
 }
 function TakelageUpgrade(){
 	if(player.Geld-1000>=0){
@@ -367,33 +370,33 @@ function SeviceUpgrade(){
 		ServiceWert+=1;
 	}
 }
-function IschtukHafenExpeditionsSchiff(){
+function DHafenExpeditionsSchiff(){
 alert('Expedition Starten');
 }
-function IschtukHafenAngeln(){
+function DHafenAngeln(){
 alert('Angeln');
 }
-function IschtukHafenReparieren(){
-	if((player.Geld-Ischtuk.ReparierKurs)>=0){
-Ischtuk.Geld+=Ischtuk.ReparierKurs;
-player.Geld-=Ischtuk.ReparierKurs;
+function DHafenReparieren(){
+	if((player.Geld-D.ReparierKurs)>=0){
+D.Geld+=D.ReparierKurs;
+player.Geld-=D.ReparierKurs;
 SchiffZustand+=5;
 }
 }
-function IschtukGovernour(){
-$('IschtukGovernour').style.visibility='visible';
+function DGovernour(){
+$('DGovernour').style.visibility='visible';
 }
-function IschtukGovernourExit(){
-$('IschtukGovernour').style.visibility='hidden';
+function DGovernourExit(){
+$('DGovernour').style.visibility='hidden';
 }
-function IschtukGovernourInfo(){
+function DGovernourInfo(){
 }
-function IschtukGovernourHome(){
+function DGovernourHome(){
 }
 
 kaufen=function(that,what,ware,menge,wertenderung){
 
-var IschtukGesamtGewicht=((player.Kaffee*IschtukGewicht.Kaffee)+(player.Tabak*IschtukGewicht.Tabak)+(player.Zuckerrohr*IschtukGewicht.Zuckerrohr)+(player.Rum*IschtukGewicht.Rum)+(player.Baumwolle*IschtukGewicht.Baumwolle)+(player.Perlen*IschtukGewicht.Perlen)+(player.Segeltuch*IschtukGewicht.Segeltuch)+(player.Hanf*IschtukGewicht.Hanf)+(player.Teer*IschtukGewicht.Teer)+(player.Holz*IschtukGewicht.Holz)+(player.Pulver*IschtukGewicht.Pulver)+(player.Kugeln*IschtukGewicht.Kugeln)+(player.Kanonen*IschtukGewicht.Kanonen)+(player.Nahrung*IschtukGewicht.Nahrung));
+var DGesamtGewicht=((player.Kaffee*DGewicht.Kaffee)+(player.Tabak*DGewicht.Tabak)+(player.Zuckerrohr*DGewicht.Zuckerrohr)+(player.Rum*DGewicht.Rum)+(player.Baumwolle*DGewicht.Baumwolle)+(player.Perlen*DGewicht.Perlen)+(player.Segeltuch*DGewicht.Segeltuch)+(player.Hanf*DGewicht.Hanf)+(player.Teer*DGewicht.Teer)+(player.Holz*DGewicht.Holz)+(player.Pulver*DGewicht.Pulver)+(player.Kugeln*DGewicht.Kugeln)+(player.Kanonen*DGewicht.Kanonen)+(player.Nahrung*DGewicht.Nahrung));
 
 	for(var i=0;i<warenliste.length;i++){
 		if(warenliste[i].id==that){
@@ -401,7 +404,7 @@ var IschtukGesamtGewicht=((player.Kaffee*IschtukGewicht.Kaffee)+(player.Tabak*Is
 				if(preisliste[j].id==what){
 					
 					if(ware=='Kaffee'){
-					if(IschtukGesamtGewicht+(IschtukGewicht.Kaffee*menge)<=MaximalLadung){
+					if(DGesamtGewicht+(DGewicht.Kaffee*menge)<=MaximalLadung){
 						if(warenliste[i].Geld-preisliste[j].Kaffee*menge>=0){
 						warenliste[i].Kaffee+=menge;
 						warenliste[i].Geld-=preisliste[j].Kaffee*menge;
@@ -411,7 +414,7 @@ var IschtukGesamtGewicht=((player.Kaffee*IschtukGewicht.Kaffee)+(player.Tabak*Is
 						}
 					}
 					if(ware=='Tabak'){
-					if(IschtukGesamtGewicht+(IschtukGewicht.Tabak*menge)<=MaximalLadung){
+					if(DGesamtGewicht+(DGewicht.Tabak*menge)<=MaximalLadung){
 						if(warenliste[i].Geld-preisliste[j].Tabak*menge>=0){
 							warenliste[i].Tabak+=menge;
 							warenliste[i].Geld-=preisliste[j].Tabak*menge;
@@ -421,7 +424,7 @@ var IschtukGesamtGewicht=((player.Kaffee*IschtukGewicht.Kaffee)+(player.Tabak*Is
 						}
 					}
 					if(ware=='Zuckerrohr'){
-					if(IschtukGesamtGewicht+(IschtukGewicht.Zuckerrohr*menge)<=MaximalLadung){
+					if(DGesamtGewicht+(DGewicht.Zuckerrohr*menge)<=MaximalLadung){
 						if(warenliste[i].Geld-preisliste[j].Zuckerrohr*menge>=0){
 							warenliste[i].Zuckerrohr+=menge;
 							warenliste[i].Geld-=preisliste[j].Zuckerrohr*menge;
@@ -431,7 +434,7 @@ var IschtukGesamtGewicht=((player.Kaffee*IschtukGewicht.Kaffee)+(player.Tabak*Is
 						}
 					}
 					if(ware=='Rum'){
-					if(IschtukGesamtGewicht+(IschtukGewicht.Rum*menge)<=MaximalLadung){
+					if(DGesamtGewicht+(DGewicht.Rum*menge)<=MaximalLadung){
 						if(warenliste[i].Geld-preisliste[j].Rum*menge>=0){
 							warenliste[i].Rum+=menge;
 							warenliste[i].Geld-=preisliste[j].Rum*menge;
@@ -441,7 +444,7 @@ var IschtukGesamtGewicht=((player.Kaffee*IschtukGewicht.Kaffee)+(player.Tabak*Is
 						}
 					}
 					if(ware=='Baumwolle'){
-					if(IschtukGesamtGewicht+(IschtukGewicht.Baumwolle*menge)<=MaximalLadung){
+					if(DGesamtGewicht+(DGewicht.Baumwolle*menge)<=MaximalLadung){
 						if(warenliste[i].Geld-preisliste[j].Baumwolle*menge>=0){
 							warenliste[i].Baumwolle+=menge;
 							warenliste[i].Geld-=preisliste[j].Baumwolle*menge;
@@ -451,7 +454,7 @@ var IschtukGesamtGewicht=((player.Kaffee*IschtukGewicht.Kaffee)+(player.Tabak*Is
 						}
 					}
 					if(ware=='Perlen'){
-					if(IschtukGesamtGewicht+(IschtukGewicht.Perlen*menge)<=MaximalLadung){
+					if(DGesamtGewicht+(DGewicht.Perlen*menge)<=MaximalLadung){
 						if(warenliste[i].Geld-preisliste[j].Perlen*menge>=0){
 							warenliste[i].Perlen+=menge;
 							warenliste[i].Geld-=preisliste[j].Perlen*menge;
@@ -461,7 +464,7 @@ var IschtukGesamtGewicht=((player.Kaffee*IschtukGewicht.Kaffee)+(player.Tabak*Is
 						}
 					}
 					if(ware=='Segeltuch'){
-					if(IschtukGesamtGewicht+(IschtukGewicht.Segeltuch*menge)<=MaximalLadung){
+					if(DGesamtGewicht+(DGewicht.Segeltuch*menge)<=MaximalLadung){
 						if(warenliste[i].Geld-preisliste[j].Segeltuch*menge>=0){
 							warenliste[i].Segeltuch+=menge;
 							warenliste[i].Geld-=preisliste[j].Segeltuch*menge;
@@ -471,7 +474,7 @@ var IschtukGesamtGewicht=((player.Kaffee*IschtukGewicht.Kaffee)+(player.Tabak*Is
 						}
 					}
 					if(ware=='Hanf'){
-					if(IschtukGesamtGewicht+(IschtukGewicht.Hanf*menge)<=MaximalLadung){
+					if(DGesamtGewicht+(DGewicht.Hanf*menge)<=MaximalLadung){
 						if(warenliste[i].Geld-preisliste[j].Hanf*menge>=0){
 							warenliste[i].Hanf+=menge;
 							warenliste[i].Geld-=preisliste[j].Hanf*menge;
@@ -481,7 +484,7 @@ var IschtukGesamtGewicht=((player.Kaffee*IschtukGewicht.Kaffee)+(player.Tabak*Is
 						}
 					}
 					if(ware=='Teer'){
-					if(IschtukGesamtGewicht+(IschtukGewicht.Teer*menge)<=MaximalLadung){
+					if(DGesamtGewicht+(DGewicht.Teer*menge)<=MaximalLadung){
 						if(warenliste[i].Geld-preisliste[j].Teer*menge>=0){
 							warenliste[i].Teer+=menge;
 							warenliste[i].Geld-=preisliste[j].Teer*menge;
@@ -491,7 +494,7 @@ var IschtukGesamtGewicht=((player.Kaffee*IschtukGewicht.Kaffee)+(player.Tabak*Is
 						}
 					}
 					if(ware=='Holz'){
-					if(IschtukGesamtGewicht+(IschtukGewicht.Holz*menge)<=MaximalLadung){
+					if(DGesamtGewicht+(DGewicht.Holz*menge)<=MaximalLadung){
 						if(warenliste[i].Geld-preisliste[j].Holz*menge>=0){
 							warenliste[i].Holz+=menge;
 							warenliste[i].Geld-=preisliste[j].Holz*menge;
@@ -501,7 +504,7 @@ var IschtukGesamtGewicht=((player.Kaffee*IschtukGewicht.Kaffee)+(player.Tabak*Is
 						}
 					}
 					if(ware=='Pulver'){
-					if(IschtukGesamtGewicht+(IschtukGewicht.Pulver*menge)<=MaximalLadung){
+					if(DGesamtGewicht+(DGewicht.Pulver*menge)<=MaximalLadung){
 						if(warenliste[i].Geld-preisliste[j].Pulver*menge>=0){
 							warenliste[i].Pulver+=menge;
 							warenliste[i].Geld-=preisliste[j].Pulver*menge;
@@ -511,7 +514,7 @@ var IschtukGesamtGewicht=((player.Kaffee*IschtukGewicht.Kaffee)+(player.Tabak*Is
 						}
 					}
 					if(ware=='Kugeln'){
-					if(IschtukGesamtGewicht+(IschtukGewicht.Kugeln*menge)<=MaximalLadung){
+					if(DGesamtGewicht+(DGewicht.Kugeln*menge)<=MaximalLadung){
 						if(warenliste[i].Geld-preisliste[j].Kugeln*menge>=0){
 							warenliste[i].Kugeln+=menge;
 							warenliste[i].Geld-=preisliste[j].Kugeln*menge;
@@ -521,7 +524,7 @@ var IschtukGesamtGewicht=((player.Kaffee*IschtukGewicht.Kaffee)+(player.Tabak*Is
 						}
 					}
 					if(ware=='Kanonen'){
-						if(IschtukGesamtGewicht+(IschtukGewicht.Kanonen*menge)<=MaximalLadung){
+						if(DGesamtGewicht+(DGewicht.Kanonen*menge)<=MaximalLadung){
 							if(warenliste[i].Geld-preisliste[j].Kanonen*menge>=0){
 								warenliste[i].Kanonen+=menge;
 								warenliste[i].Geld-=preisliste[j].Kanonen*menge;
@@ -531,7 +534,7 @@ var IschtukGesamtGewicht=((player.Kaffee*IschtukGewicht.Kaffee)+(player.Tabak*Is
 						}
 					}
 					if(ware=='Nahrung'){
-					if(IschtukGesamtGewicht+(IschtukGewicht.Nahrung*menge)<=MaximalLadung){
+					if(DGesamtGewicht+(DGewicht.Nahrung*menge)<=MaximalLadung){
 						if(warenliste[i].Geld-preisliste[j].Nahrung*menge>=0){
 							warenliste[i].Nahrung+=menge;
 							warenliste[i].Geld-=preisliste[j].Nahrung*menge;
@@ -553,7 +556,7 @@ verkaufen=function(that,what,ware,menge,wertenderung){
 				if(preisliste[j].id==what){
 				
 					if(ware=='Kaffee'){
-						if(Ischtuk.Geld-preisliste[j].Kaffee*menge>=0){
+						if(D.Geld-preisliste[j].Kaffee*menge>=0){
 							if(warenliste[i].Kaffee-menge>=0){
 								warenliste[i].Kaffee-=menge;
 								warenliste[i].Geld+=eval(preisliste[j].Kaffee*menge);
@@ -564,7 +567,7 @@ verkaufen=function(that,what,ware,menge,wertenderung){
 						}
 					}
 					if(ware=='Tabak'){
-					if(Ischtuk.Geld-preisliste[j].Tabak*menge>=0){
+					if(D.Geld-preisliste[j].Tabak*menge>=0){
 						if(warenliste[i].Tabak-menge>=0){
 							warenliste[i].Tabak-=menge;
 							warenliste[i].Geld+=eval(preisliste[j].Tabak*menge);
@@ -574,7 +577,7 @@ verkaufen=function(that,what,ware,menge,wertenderung){
 						}
 					}
 					if(ware=='Zuckerrohr'){
-					if(Ischtuk.Geld-preisliste[j].Zuckerrohr*menge>=0){
+					if(D.Geld-preisliste[j].Zuckerrohr*menge>=0){
 						if(warenliste[i].Zuckerrohr-menge>=0){
 							warenliste[i].Zuckerrohr-=menge;
 							warenliste[i].Geld+=eval(preisliste[j].Zuckerrohr*menge);
@@ -584,7 +587,7 @@ verkaufen=function(that,what,ware,menge,wertenderung){
 						}
 					}
 					if(ware=='Rum'){
-					if(Ischtuk.Geld-preisliste[j].Rum*menge>=0){
+					if(D.Geld-preisliste[j].Rum*menge>=0){
 						if(warenliste[i].Rum-menge>=0){
 							warenliste[i].Rum-=menge;
 							warenliste[i].Geld+=eval(preisliste[j].Rum*menge);
@@ -594,7 +597,7 @@ verkaufen=function(that,what,ware,menge,wertenderung){
 						}
 					}
 					if(ware=='Baumwolle'){
-					if(Ischtuk.Geld-preisliste[j].Baumwolle*menge>=0){
+					if(D.Geld-preisliste[j].Baumwolle*menge>=0){
 						if(warenliste[i].Baumwolle-menge>=0){
 							warenliste[i].Baumwolle-=menge;
 							warenliste[i].Geld+=eval(preisliste[j].Baumwolle*menge);
@@ -604,7 +607,7 @@ verkaufen=function(that,what,ware,menge,wertenderung){
 						}
 					}
 					if(ware=='Perlen'){
-					if(Ischtuk.Geld-preisliste[j].Perlen*menge>=0){
+					if(D.Geld-preisliste[j].Perlen*menge>=0){
 						if(warenliste[i].Perlen-menge>=0){
 							warenliste[i].Perlen-=menge;
 							warenliste[i].Geld+=eval(preisliste[j].Perlen*menge);
@@ -614,7 +617,7 @@ verkaufen=function(that,what,ware,menge,wertenderung){
 						}
 					}
 					if(ware=='Segeltuch'){
-					if(Ischtuk.Geld-preisliste[j].Segeltuch*menge>=0){
+					if(D.Geld-preisliste[j].Segeltuch*menge>=0){
 						if(warenliste[i].Segeltuch-menge>=0){
 							warenliste[i].Segeltuch-=menge;
 							warenliste[i].Geld+=eval(preisliste[j].Segeltuch*menge);
@@ -624,7 +627,7 @@ verkaufen=function(that,what,ware,menge,wertenderung){
 						}
 					}
 					if(ware=='Hanf'){
-					if(Ischtuk.Geld-preisliste[j].Hanf*menge>=0){
+					if(D.Geld-preisliste[j].Hanf*menge>=0){
 						if(warenliste[i].Hanf-menge>=0){
 							warenliste[i].Hanf-=menge;
 							warenliste[i].Geld+=eval(preisliste[j].Hanf*menge);
@@ -634,7 +637,7 @@ verkaufen=function(that,what,ware,menge,wertenderung){
 						}
 					}
 					if(ware=='Teer'){
-					if(Ischtuk.Geld-preisliste[j].Teer*menge>=0){
+					if(D.Geld-preisliste[j].Teer*menge>=0){
 						if(warenliste[i].Teer-menge>=0){
 							warenliste[i].Teer-=menge;
 							warenliste[i].Geld+=eval(preisliste[j].Teer*menge);
@@ -644,7 +647,7 @@ verkaufen=function(that,what,ware,menge,wertenderung){
 						}
 					}
 					if(ware=='Holz'){
-					if(Ischtuk.Geld-preisliste[j].Holz*menge>=0){
+					if(D.Geld-preisliste[j].Holz*menge>=0){
 						if(warenliste[i].Holz-menge>=0){
 							warenliste[i].Holz-=menge;
 							warenliste[i].Geld+=eval(preisliste[j].Holz*menge);
@@ -654,7 +657,7 @@ verkaufen=function(that,what,ware,menge,wertenderung){
 						}
 					}
 					if(ware=='Pulver'){
-					if(Ischtuk.Geld-preisliste[j].Pulver*menge>=0){
+					if(D.Geld-preisliste[j].Pulver*menge>=0){
 						if(warenliste[i].Pulver-menge>=0){
 							warenliste[i].Pulver-=menge;
 							warenliste[i].Geld+=eval(preisliste[j].Pulver*menge);
@@ -664,7 +667,7 @@ verkaufen=function(that,what,ware,menge,wertenderung){
 						}
 					}
 					if(ware=='Kugeln'){
-					if(Ischtuk.Geld-preisliste[j].Kugeln*menge>=0){
+					if(D.Geld-preisliste[j].Kugeln*menge>=0){
 						if(warenliste[i].Kugeln-menge>=0){
 							warenliste[i].Kugeln-=menge;
 							warenliste[i].Geld+=eval(preisliste[j].Kugeln*menge);
@@ -674,7 +677,7 @@ verkaufen=function(that,what,ware,menge,wertenderung){
 						}
 					}
 					if(ware=='Kanonen'){
-					if(Ischtuk.Geld-preisliste[j].Kanonen*menge>=0){
+					if(D.Geld-preisliste[j].Kanonen*menge>=0){
 						if(warenliste[i].Kanonen-menge>=0){
 							warenliste[i].Kanonen-=menge;
 							warenliste[i].Geld+=eval(preisliste[j].Kanonen*menge);
@@ -684,7 +687,7 @@ verkaufen=function(that,what,ware,menge,wertenderung){
 						}
 					}
 					if(ware=='Nahrung'){
-					if(Ischtuk.Geld-preisliste[j].Nahrung*menge>=0){
+					if(D.Geld-preisliste[j].Nahrung*menge>=0){
 						if(warenliste[i].Nahrung-menge>=0){
 							warenliste[i].Nahrung-=menge;
 							warenliste[i].Geld+=eval(preisliste[j].Nahrung*menge);
